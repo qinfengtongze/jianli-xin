@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 550" width="100%" height="100%">
+  <rect width="400" height="550" fill="#F1F2F4" />
+  
+  <!-- Comment 1 -->
+  <text x="200" y="30" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#999" text-anchor="middle">2025年12月1日 14:06</text>
+  <circle cx="45" cy="85" r="18" fill="#FFF" stroke="#E1E2E4" stroke-width="1" />
+  <circle cx="45" cy="85" r="14" fill="#FCE4EC" />
+  <!-- Anime avatar placeholder -->
+  <circle cx="45" cy="82" r="5" fill="#EC407A" />
+  <path d="M38,92 C38,87 52,87 52,92 Z" fill="#EC407A" />
+  <!-- Chat Bubble -->
+  <rect x="75" y="55" width="290" height="80" rx="10" fill="#FFF" />
+  <polygon points="75,80 67,85 75,90" fill="#FFF" />
+  <text x="88" y="75" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" fill="#333">
+    <tspan x="88" dy="0">【山寨手表？不，这是一台能插卡的</tspan>
+    <tspan x="88" dy="16">迷你安卓手机-哔哩哔哩】 <tspan fill="#00AEEC">🔗网页链</tspan></tspan>
+    <tspan x="88" dy="16"><tspan fill="#00AEEC">接</tspan>，主播主播，求你这个视频里的手</tspan>
+    <tspan x="88" dy="16">表的同款链接</tspan>
+  </text>
+
+  <!-- Comment 2 -->
+  <text x="200" y="200" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#999" text-anchor="middle">2025年10月20日 16:29</text>
+  <circle cx="45" cy="255" r="18" fill="#FFF" stroke="#E1E2E4" stroke-width="1" />
+  <circle cx="45" cy="255" r="14" fill="#EFEBE9" />
+  <!-- Cat icon -->
+  <ellipse cx="45" cy="255" rx="6" ry="5" fill="#5D4037" />
+  <polygon points="40,251 38,245 43,249" fill="#5D4037" />
+  <polygon points="50,251 52,245 47,249" fill="#5D4037" />
+  <!-- Chat Bubble -->
+  <rect x="75" y="225" width="290" height="100" rx="10" fill="#FFF" />
+  <polygon points="75,250 67,255 75,260" fill="#FFF" />
+  <text x="88" y="244" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" fill="#333">
+    <tspan x="88" dy="0">主播主播我想问一下我是大学生想搞</tspan>
+    <tspan x="88" dy="16">个8寸平板便宜的，主要就是看文件看</tspan>
+    <tspan x="88" dy="16">教材，休闲就是刷视频看小说，没啥</tspan>
+    <tspan x="88" dy="16">游戏需求最多就是打铲铲强度也不</tspan>
+    <tspan x="88" dy="16">高，我应该选啥，台电t50mini和fpd</tspan>
+  </text>
+
+  <!-- Comment 3 -->
+  <text x="200" y="380" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#999" text-anchor="middle">2024年3月10日 16:13</text>
+  <circle cx="45" cy="435" r="18" fill="#FFF" stroke="#E1E2E4" stroke-width="1" />
+  <circle cx="45" cy="435" r="14" fill="#E0F2F1" />
+  <circle cx="45" cy="432" r="4" fill="#004D40" />
+  <path d="M39,442 C39,438 51,438 51,442 Z" fill="#004D40" />
+  <!-- Chat Bubble -->
+  <rect x="75" y="405" width="290" height="85" rx="10" fill="#FFF" />
+  <polygon points="75,430 67,435 75,440" fill="#FFF" />
+  <text x="88" y="424" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" fill="#333">
+    <tspan x="88" dy="0">up主 我最近买了sancn50pro4 我感觉</tspan>
+    <tspan x="88" dy="16">屏幕显示白色的时候有点偏黄偏红 想</tspan>
+    <tspan x="88" dy="16">再买科睿x41对比一下 所以想问一下这</tspan>
+    <tspan x="88" dy="16">个硬件低蓝光真的有用吗</tspan>
+  </text>
+</svg>

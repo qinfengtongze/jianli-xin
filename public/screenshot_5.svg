@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 550" width="100%" height="100%">
+  <!-- Header / Profile area background -->
+  <rect width="400" height="550" fill="#F4F5F7" />
+  
+  <!-- Back arrow -->
+  <path d="M25,30 L15,40 L25,50" stroke="#333" stroke-width="2" fill="none" />
+  
+  <!-- Avatar -->
+  <circle cx="200" cy="100" r="45" fill="#FFF" stroke="#E2E8F0" stroke-width="1" />
+  <circle cx="200" cy="100" r="35" fill="#FFF" />
+  <circle cx="200" cy="100" r="28" fill="none" stroke="#FF5722" stroke-width="2" />
+  <text x="200" y="104" font-family="'PingFang SC', sans-serif" font-size="14" font-weight="bold" fill="#FF5722" text-anchor="middle">钊禾</text>
+  <text x="200" y="118" font-family="'PingFang SC', sans-serif" font-size="6" fill="#FF5722" text-anchor="middle">钊禾塑化</text>
+
+  <!-- User Name -->
+  <text x="200" y="175" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="18" font-weight="bold" fill="#1E293B" text-anchor="middle">华东地区代理</text>
+  
+  <!-- Bio -->
+  <text x="200" y="200" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" fill="#64748B" text-anchor="middle">本公司专营: PC EVA PA66 POM ...</text>
+  
+  <!-- Badges -->
+  <!-- Male Badge -->
+  <rect x="145" y="215" width="45" height="18" rx="4" fill="#E0F2FE" />
+  <text x="167" y="228" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="bold" fill="#0284C7" text-anchor="middle">♂ 男</text>
+  <!-- IP Badge -->
+  <rect x="195" y="215" width="60" height="18" rx="4" fill="#F1F5F9" />
+  <text x="225" y="228" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="10" fill="#64748B" text-anchor="middle">IP: 江苏</text>
+
+  <!-- Button: 查看主页 -->
+  <rect x="140" y="248" width="120" height="32" rx="16" fill="#E2E8F0" />
+  <text x="200" y="268" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">查看主页</text>
+
+  <!-- Divider & Timestamp -->
+  <line x1="20" y1="305" x2="380" y2="305" stroke="#E2E8F0" stroke-width="1" />
+  <rect x="140" y="295" width="120" height="20" rx="10" fill="#F4F5F7" />
+  <text x="200" y="309" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#94A3B8" text-anchor="middle">2024/04/23 20:49</text>
+
+  <!-- Chat message 1 -->
+  <rect x="35" y="335" width="330" height="60" rx="12" fill="#FFF" stroke="#E2E8F0" stroke-width="1" />
+  <text x="50" y="356" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" fill="#334155">
+    <tspan x="50" dy="0">你好，我预算500左右然后游戏玩的比较少，主要就</tspan>
+    <tspan x="50" dy="16">是办公和看电视，选SANC n50pro4还是科睿X41</tspan>
+  </text>
+
+  <!-- Chat message 2 -->
+  <rect x="35" y="410" width="330" height="60" rx="12" fill="#FFF" stroke="#E2E8F0" stroke-width="1" />
+  <text x="50" y="431" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" fill="#334155">
+    <tspan x="50" dy="0">我是今天显示屏坏了然后看到你的视频，想问问你</tspan>
+    <tspan x="50" dy="16">的意见🙏</tspan>
+  </text>
+</svg>

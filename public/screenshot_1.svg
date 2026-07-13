@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 550" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="400" height="550" fill="#F1F2F4" />
+  
+  <!-- Comment 1 -->
+  <!-- Timestamp -->
+  <text x="200" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#999" text-anchor="middle">2026年1月18日 18:02</text>
+  <!-- Avatar -->
+  <circle cx="45" cy="85" r="18" fill="#FFF" stroke="#E1E2E4" stroke-width="1" />
+  <!-- Avatar interior (stylized green/pink icon) -->
+  <circle cx="45" cy="85" r="14" fill="#E8F5E9" />
+  <line x1="41" y1="85" x2="49" y2="85" stroke="#4CAF50" stroke-width="2" />
+  <line x1="45" y1="81" x2="45" y2="89" stroke="#E91E63" stroke-width="2" />
+  <!-- Chat Bubble -->
+  <rect x="75" y="55" width="290" height="70" rx="10" fill="#FFF" />
+  <polygon points="75,80 67,85 75,90" fill="#FFF" />
+  <text x="88" y="76" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" fill="#333" width="260">
+    <tspan x="88" dy="0">你好，UP，请问一下，你在25年9月</tspan>
+    <tspan x="88" dy="16">19号那个视频，中出现的小型相机是</tspan>
+    <tspan x="88" dy="16">哪家？什么型号？在哪里可以购买？🐶</tspan>
+  </text>
+
+  <!-- Comment 2 -->
+  <!-- Timestamp -->
+  <text x="200" y="200" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#999" text-anchor="middle">2026年2月23日 20:39</text>
+  <!-- Avatar -->
+  <circle cx="45" cy="255" r="18" fill="#FFF" stroke="#E1E2E4" stroke-width="1" />
+  <circle cx="45" cy="255" r="14" fill="#334155" />
+  <!-- stylized selfie sketch -->
+  <circle cx="45" cy="251" r="5" fill="#94A3B8" />
+  <path d="M37,265 C37,258 53,258 53,265 Z" fill="#94A3B8" />
+  <!-- Chat Bubble -->
+  <rect x="75" y="225" width="290" height="70" rx="10" fill="#FFF" />
+  <polygon points="75,250 67,255 75,260" fill="#FFF" />
+  <text x="88" y="246" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" fill="#333">
+    <tspan x="88" dy="0">up主，我想买一个一千元出头的全新</tspan>
+    <tspan x="88" dy="16">笔记本，能给我推荐一下吗？屏幕大</tspan>
+    <tspan x="88" dy="16">能追剧就行</tspan>
+  </text>
+
+  <!-- Comment 3 -->
+  <!-- Timestamp -->
+  <text x="200" y="370" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#999" text-anchor="middle">2026年3月8日 20:00</text>
+  <!-- Avatar -->
+  <circle cx="45" cy="425" r="18" fill="#FFF" stroke="#E1E2E4" stroke-width="1" />
+  <circle cx="45" cy="425" r="14" fill="#FFF9C4" />
+  <circle cx="41" cy="423" r="1.5" fill="#FFB300" />
+  <circle cx="49" cy="423" r="1.5" fill="#FFB300" />
+  <path d="M42,428 Q45,431 48,428" stroke="#E65100" stroke-width="1.5" fill="none" />
+  <!-- Chat Bubble -->
+  <rect x="75" y="395" width="290" height="60" rx="10" fill="#FFF" />
+  <polygon points="75,420 67,425 75,430" fill="#FFF" />
+  <text x="88" y="418" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" fill="#333">
+    <tspan x="88" dy="0">up主您好，在b站上看到您发的bncf平</tspan>
+    <tspan x="88" dy="16">板，想问那个是在哪买的</tspan>
+  </text>
+</svg>

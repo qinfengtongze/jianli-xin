@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 550" width="100%" height="100%">
+  <!-- Header / Profile area background -->
+  <rect width="400" height="550" fill="#F4F5F7" />
+  
+  <!-- Back arrow -->
+  <path d="M25,30 L15,40 L25,50" stroke="#333" stroke-width="2" fill="none" />
+  
+  <!-- Avatar -->
+  <circle cx="200" cy="110" r="45" fill="#334155" />
+  <clipPath id="avatar-clip">
+    <circle cx="200" cy="110" r="43" />
+  </clipPath>
+  <g clip-path="url(#avatar-clip)">
+    <rect x="150" y="60" width="100" height="100" fill="#1E1E2F" />
+    <circle cx="200" cy="130" r="30" fill="#F97316" opacity="0.8" />
+    <rect x="150" y="115" width="100" height="40" fill="#0F172A" />
+  </g>
+  <circle cx="200" cy="110" r="44" stroke="#E2E8F0" stroke-width="2" fill="none" />
+
+  <!-- User Name -->
+  <text x="200" y="185" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="18" font-weight="bold" fill="#1E293B" text-anchor="middle">王大帅1</text>
+  
+  <!-- Bio -->
+  <text x="200" y="210" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="12" fill="#64748B" text-anchor="middle">自信心兽志坚！</text>
+  
+  <!-- Badges -->
+  <!-- Male Badge -->
+  <rect x="145" y="225" width="45" height="18" rx="4" fill="#E0F2FE" />
+  <text x="167" y="238" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="bold" fill="#0284C7" text-anchor="middle">♂ 男</text>
+  <!-- IP Badge -->
+  <rect x="195" y="225" width="60" height="18" rx="4" fill="#F1F5F9" />
+  <text x="225" y="238" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="10" fill="#64748B" text-anchor="middle">IP: 浙江</text>
+
+  <!-- Button: 查看主页 -->
+  <rect x="140" y="258" width="120" height="32" rx="16" fill="#E2E8F0" />
+  <text x="200" y="278" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">查看主页</text>
+
+  <!-- Warning Info Text -->
+  <text x="200" y="325" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="9" fill="#94A3B8" text-anchor="middle">
+    <tspan x="200" dy="0">为保障用户沟通安全，未互相关注的陌生人违规消息可</tspan>
+    <tspan x="200" dy="14">能会被处理，请遵守法律法规和社区规范</tspan>
+  </text>
+
+  <!-- Chat bubble representing user's query -->
+  <circle cx="45" cy="405" r="16" fill="#334155" />
+  <rect x="75" y="375" width="280" height="80" rx="12" fill="#FFF" stroke="#E2E8F0" stroke-width="1" />
+  <polygon points="75,395 68,400 75,405" fill="#FFF" stroke="#E2E8F0" stroke-width="1" />
+  <polygon points="75,396 69,400 75,404" fill="#FFF" /> <!-- covers border -->
+
+  <text x="88" y="396" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" fill="#334155">
+    <tspan x="88" dy="0">博主你好，给父母买手机百元价格的</tspan>
+    <tspan x="88" dy="16">那种最好。平时就刷抖音打电话回微</tspan>
+    <tspan x="88" dy="16">信，最好是性价比高一点，用时间长</tspan>
+    <tspan x="88" dy="16">不会卡</tspan>
+  </text>
+</svg>

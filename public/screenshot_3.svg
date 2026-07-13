@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 550" width="100%" height="100%">
+  <rect width="400" height="550" fill="#F1F2F4" />
+  
+  <!-- Comment 1 -->
+  <text x="200" y="30" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#999" text-anchor="middle">2024年11月05日 11:24</text>
+  <circle cx="45" cy="85" r="18" fill="#FFF" stroke="#E1E2E4" stroke-width="1" />
+  <circle cx="45" cy="85" r="14" fill="#BBDEFB" />
+  <circle cx="45" cy="82" r="5" fill="#0D47A1" />
+  <path d="M39,92 C39,88 51,88 51,92 Z" fill="#0D47A1" />
+  <!-- Chat Bubble -->
+  <rect x="75" y="55" width="290" height="115" rx="10" fill="#FFF" />
+  <polygon points="75,80 67,85 75,90" fill="#FFF" />
+  <text x="88" y="74" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" fill="#333">
+    <tspan x="88" dy="0">在家办公游戏，预算一千以内，净身</tspan>
+    <tspan x="88" dy="16">高167，体质145斤。目前用的是欧</tspan>
+    <tspan x="88" dy="16">林，很难感受到腰部支撑，用了一年</tspan>
+    <tspan x="88" dy="16">之后靠背和后靠时有很大响动，头枕</tspan>
+    <tspan x="88" dy="16">也有点鸡肋，甚至不要头枕也可，特</tspan>
+    <tspan x="88" dy="16">殊要求久坐，坐的舒服有背部依靠...</tspan>
+  </text>
+
+  <!-- Comment 2 -->
+  <text x="200" y="215" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#999" text-anchor="middle">2024年8月29日 23:45</text>
+  <circle cx="45" cy="270" r="18" fill="#FFF" stroke="#E1E2E4" stroke-width="1" />
+  <circle cx="45" cy="270" r="14" fill="#E1BEE7" />
+  <circle cx="45" cy="267" r="5" fill="#4A148C" />
+  <path d="M39,277 C39,273 51,273 51,277 Z" fill="#4A148C" />
+  <!-- Chat Bubble -->
+  <rect x="75" y="240" width="290" height="70" rx="10" fill="#FFF" />
+  <polygon points="75,265 67,270 75,275" fill="#FFF" />
+  <text x="88" y="261" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" fill="#333">
+    <tspan x="88" dy="0">up你在2022年做了期单耳耳机视频</tspan>
+    <tspan x="88" dy="16">想问一下2024年有什么大牌子的选择</tspan>
+    <tspan x="88" dy="16">么 单耳失聪 🐱</tspan>
+  </text>
+
+  <!-- Comment 3 -->
+  <text x="200" y="360" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#999" text-anchor="middle">2024年6月2日 22:50</text>
+  <circle cx="45" cy="415" r="18" fill="#FFF" stroke="#E1E2E4" stroke-width="1" />
+  <circle cx="45" cy="415" r="14" fill="#FFCDD2" />
+  <circle cx="45" cy="412" r="5" fill="#B71C1C" />
+  <path d="M39,422 C39,418 51,418 51,422 Z" fill="#B71C1C" />
+  <!-- Chat Bubble -->
+  <rect x="75" y="385" width="290" height="65" rx="10" fill="#FFF" />
+  <polygon points="75,410 67,415 75,420" fill="#FFF" />
+  <text x="88" y="407" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" fill="#333">
+    <tspan x="88" dy="0">哥，我想问一下你那个黑鲨的那个手</tspan>
+    <tspan x="88" dy="16">表能跟小米的运动健康连接吗？</tspan>
+  </text>
+</svg>
