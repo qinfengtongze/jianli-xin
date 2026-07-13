@@ -983,17 +983,16 @@ export default function App() {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                     <AnimatePresence mode="popLayout">
                       {catWorks.map((work, idx) => (
-                        <motion.div
+                        <motion.a
                           layout
+                          href={work.url}
+                          target="_blank"
+                          rel="noreferrer"
                           initial={{ opacity: 0, y: 15 }}
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, scale: 0.95 }}
                           transition={{ duration: 0.3, delay: idx * 0.05 }}
                           key={work.id}
-                          onClick={() => {
-                            setSelectedWork(work);
-                            document.getElementById('works')?.scrollIntoView({ behavior: 'smooth' });
-                          }}
                           className="group rounded-3xl p-6 bg-slate-50 border border-slate-200 cursor-pointer hover:border-blue-400 hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between shadow-sm"
                         >
                           <div className="space-y-4">
@@ -1020,16 +1019,16 @@ export default function App() {
 
                           {/* Bottom details and link trigger */}
                           <div className="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500 font-mono">
-                            <span className="flex items-center space-x-1">
-                              <Clock size={12} className="text-slate-400" />
-                              <span>已校验</span>
+                            <span className="flex items-center space-x-1 text-slate-400">
+                              <ExternalLink size={12} />
+                              <span className="text-slate-500">{work.platform} 视频直达</span>
                             </span>
                             <span className="text-blue-600 group-hover:underline flex items-center space-x-1 text-[11px] font-bold">
-                              <span>{selectedWork?.id === work.id ? '播放中' : '模拟预览'}</span>
+                              <span>立即观看</span>
                               <ChevronRight size={12} />
                             </span>
                           </div>
-                        </motion.div>
+                        </motion.a>
                       ))}
                     </AnimatePresence>
                   </div>
