@@ -654,7 +654,7 @@ export default function App() {
                   <ExternalLink size={14} className="text-slate-400 group-hover:text-blue-600 transition-colors" />
                 </div>
                 <div className="space-y-1">
-                  <h3 className="text-lg font-bold text-slate-800 group-hover:text-blue-600 transition-colors">村上智慧树 (协理)</h3>
+                  <h3 className="text-lg font-bold text-slate-800 group-hover:text-blue-600 transition-colors">村上智慧树 (独立主导)</h3>
                   <p className="text-xs text-slate-500 font-mono">从 0 快速孵化至 12万 粉丝</p>
                 </div>
                 <p className="text-xs text-slate-600 leading-relaxed">
