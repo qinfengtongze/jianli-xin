@@ -420,13 +420,6 @@ export default function App() {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
               >
-                <a 
-                  href="#works" 
-                  className="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-sm bg-gradient-to-r from-blue-600 to-indigo-600 text-white flex items-center justify-center space-x-2 shadow-md shadow-blue-500/10 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/20 transition-all"
-                >
-                  <Play size={16} fill="white" />
-                  <span>浏览作品集</span>
-                </a>
                 <button 
                   onClick={() => handleCopy('hedong2345', 'wechat')}
                   className="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-sm bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 flex items-center justify-center space-x-2 hover:-translate-y-0.5 transition-all shadow-sm cursor-pointer"
