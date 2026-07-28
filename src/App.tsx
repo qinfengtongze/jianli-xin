@@ -269,9 +269,9 @@ export default function App() {
   ];
 
   const categoriesList = [
+    { id: 'viral', title: '爆款成就与引领热潮', subtitle: '独家首发引爆风潮 · 平台算法推荐突破', color: 'from-rose-600 to-pink-600' },
     { id: 'commercial', title: '品牌商单案例', subtitle: '大厂深度信赖 · 场景化卖点爆破', color: 'from-blue-600 to-indigo-600' },
-    { id: 'narrative', title: '非遗人文与深度访谈', subtitle: '有温度的跨界融合 · 深刻思想厚度', color: 'from-amber-600 to-amber-800' },
-    { id: 'viral', title: '爆款成就与引领热潮', subtitle: '独家首发引爆风潮 · 平台算法推荐突破', color: 'from-rose-600 to-pink-600' }
+    { id: 'narrative', title: '非遗人文与深度访谈', subtitle: '有温度的跨界融合 · 深刻思想厚度', color: 'from-amber-600 to-amber-800' }
   ];
 
   const displayedCategories = categoriesList.filter(
@@ -883,9 +883,9 @@ export default function App() {
             <div className="flex flex-wrap items-center gap-2 bg-slate-50 p-1.5 rounded-2xl border border-slate-200 shadow-sm">
               {[
                 { id: 'all', label: '全类别' },
+                { id: 'viral', label: '爆款数据' },
                 { id: 'commercial', label: '品牌商单' },
-                { id: 'narrative', label: '非遗人文' },
-                { id: 'viral', label: '爆款数据' }
+                { id: 'narrative', label: '非遗人文' }
               ].map(cat => (
                 <button
                   key={cat.id}
