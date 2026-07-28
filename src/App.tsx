@@ -163,7 +163,7 @@ export default function App() {
       description: '单品上手体验爆款：直观真实展示细腻工业设计与旗舰影像细节，引发数万网友高赞互动，斩获 996.9万 顶级播放。',
       tag: '深度上手',
       metric: '996.9万 浏览',
-      image: '/viral_real_oppo.jpg',
+      image: '/portfolio/oppo-x9-pro.jpg',
       accentBg: 'bg-emerald-50 border-emerald-200/60 text-emerald-600 hover:border-emerald-400',
       accentText: 'text-emerald-600'
     },
@@ -176,7 +176,7 @@ export default function App() {
       description: '单品全面深度实测内容：流畅耐用不偏科，直击续航与耐摔核心卖点，获得 445.6万 浏览与深度认同。',
       tag: '深度实测',
       metric: '445.6万 浏览',
-      image: '/viral_real_2.jpg',
+      image: '/portfolio/vivo-y600-turbo.jpg',
       accentBg: 'bg-rose-50 border-rose-200/60 text-rose-600 hover:border-rose-400',
       accentText: 'text-rose-600'
     },
@@ -189,7 +189,7 @@ export default function App() {
       description: '创新折叠屏实测：深度挖掘折叠屏大屏人像与多场景使用体验，获得 233.7万 浏览与热烈讨论。',
       tag: '折叠屏爆款',
       metric: '233.7万 浏览',
-      image: '/viral_real_3.jpg',
+      image: '/portfolio/vivo-xfold6.jpg',
       accentBg: 'bg-pink-50 border-pink-200/60 text-pink-600 hover:border-pink-400',
       accentText: 'text-pink-600'
     },
@@ -202,7 +202,7 @@ export default function App() {
       description: '热点事件宣传内容：发布会现场小田（田曦薇）现场热点拉满，高效捕捉暴风流量，收获 409.4万 高赞播放。',
       tag: '热点宣传',
       metric: '409.4万 浏览',
-      image: '/viral_real_4.jpg',
+      image: '/portfolio/vivo-s60.jpg',
       accentBg: 'bg-purple-50 border-purple-200/60 text-purple-600 hover:border-purple-400',
       accentText: 'text-purple-600'
     },
