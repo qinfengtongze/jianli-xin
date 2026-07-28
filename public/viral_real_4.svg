@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg_s60" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="35%" stop-color="#0369A1"/>
+      <stop offset="65%" stop-color="#075985"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <radialGradient id="stage_water" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="dress_grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Stage Background with Water Light Ripples -->
+  <rect width="360" height="640" fill="url(#bg_s60)" rx="16"/>
+  <ellipse cx="180" cy="300" rx="190" ry="110" fill="url(#stage_water)"/>
+
+  <!-- Top Status Bar -->
+  <g fill="#FFFFFF" opacity="0.95">
+    <text x="16" y="26" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700">17:54</text>
+    <text x="282" y="26" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">5G  95%</text>
+    <path d="M 16 48 L 24 56 L 16 64" stroke="#FFF" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="330" cy="56" r="8" fill="none" stroke="#FFF" stroke-width="2"/>
+  </g>
+
+  <!-- Actress Tian Xiwei Walking on Digital Ocean Stage -->
+  <g transform="translate(180, 310)">
+    <!-- Silvery Elegance Flowing Dress -->
+    <path d="M -25 30 Q -60 100, -40 180 Q 0 190, 40 180 Q 60 100, 25 30 Z" fill="url(#dress_grad)" opacity="0.95"/>
+    <path d="M -15 20 Q -35 70, -20 140 Q 0 150, 20 140 Q 35 70, 15 20 Z" fill="#F1F5F9" opacity="0.8"/>
+
+    <!-- Torso -->
+    <path d="M -16 -20 L -20 30 C -10 35, 10 35, 20 30 L 16 -20 Z" fill="#FCE7F3"/>
+
+    <!-- Head & Hair -->
+    <circle cx="0" cy="-45" r="16" fill="#FDE047"/>
+    <!-- Dark Wavy Hair -->
+    <path d="M -25 -50 C -25 -80, 25 -80, 25 -50 C 30 -10, -30 -10, -25 -50 Z" fill="#1E1B4B"/>
+    <!-- Face -->
+    <ellipse cx="0" cy="-42" rx="11" ry="13" fill="#FED7AA"/>
+    <!-- Lips & Facial Expression -->
+    <ellipse cx="0" cy="-35" rx="3" ry="1.5" fill="#E11D48"/>
+    <circle cx="-4" cy="-43" r="1.5" fill="#0F172A"/>
+    <circle cx="4" cy="-43" r="1.5" fill="#0F172A"/>
+  </g>
+
+  <!-- Caption Overlay Box -->
+  <g transform="translate(16, 450)">
+    <rect x="0" y="0" width="240" height="52" rx="16" fill="rgba(30, 30, 35, 0.76)"/>
+    <text x="16" y="22" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11.5" font-weight="800" fill="#CBD5E1">机圈大事件 · 05-29</text>
+    <text x="16" y="38" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">vivo S60发布会小田 #田曦</text>
+    <text x="16" y="52" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">薇 现场#vivoS60我喜欢...</text>
+  </g>
+
+  <!-- Search Tag -->
+  <text x="16" y="560" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11.5" font-weight="600" fill="#E2E8F0">🔍 相关搜索 · vivoS60</text>
+
+  <!-- Right Sidebar Engagement Controls -->
+  <g transform="translate(302, 230)">
+    <circle cx="20" cy="20" r="18" fill="#FFDC00" stroke="#FFF" stroke-width="2"/>
+    <text x="20" y="24" font-size="9" font-weight="900" fill="#000" text-anchor="middle">机圈</text>
+
+    <path d="M 20 70 C 10 55, 0 70, 20 88 C 40 70, 30 55, 20 70 Z" fill="#FFF"/>
+    <text x="20" y="100" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#FFF" text-anchor="middle">5.3万</text>
+
+    <circle cx="20" cy="128" r="12" fill="#FFF"/>
+    <text x="20" y="152" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#FFF" text-anchor="middle">605</text>
+
+    <polygon points="20,174 24,184 35,184 26,191 29,202 20,195 11,202 14,191 5,184 16,184" fill="#FFF"/>
+    <text x="20" y="216" font-family="sans-serif" font-size="10.5" font-weight="700" fill="#FFF" text-anchor="middle">2041</text>
+  </g>
+
+  <!-- Bottom Toolbar Banner (PROMINENT PLAY COUNT AT BOTTOM) -->
+  <g transform="translate(0, 588)">
+    <rect width="360" height="52" fill="#0A0B10"/>
+    <line x1="0" y1="0" x2="360" y2="0" stroke="#27272A" stroke-width="1"/>
+
+    <!-- Play Count -->
+    <path d="M 16 26 L 26 19 L 26 33 Z" fill="#FFFFFF"/>
+    <text x="32" y="30" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF">409.4万浏览</text>
+
+    <!-- Video Analysis Pill -->
+    <rect x="156" y="12" width="130" height="28" rx="8" fill="#27272A"/>
+    <text x="221" y="30" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" font-weight="700" fill="#E4E4E7" text-anchor="middle">📊 视频分析  ^</text>
+
+    <!-- Public Badge -->
+    <rect x="294" y="12" width="52" height="28" rx="8" fill="#27272A"/>
+    <text x="320" y="30" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" font-weight="700" fill="#E4E4E7" text-anchor="middle">公开</text>
+  </g>
+</svg>

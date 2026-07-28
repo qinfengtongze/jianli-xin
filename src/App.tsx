@@ -29,7 +29,9 @@ import {
   X,
   Camera,
   Eye,
-  Layers
+  Layers,
+  Maximize2,
+  ZoomIn
 } from 'lucide-react';
 
 // Interfaces
@@ -44,10 +46,12 @@ interface WorkItem {
   metric?: string;
   accentBg: string;
   accentText: string;
+  image?: string;
 }
 
 export default function App() {
   const [copiedText, setCopiedText] = useState<string | null>(null);
+  const [lightboxImage, setLightboxImage] = useState<{ src: string; title: string; metric?: string; url: string } | null>(null);
   const [activeCategory, setActiveCategory] = useState<'all' | 'commercial' | 'narrative' | 'viral'>('all');
   const [selectedWork, setSelectedWork] = useState<WorkItem | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -149,7 +153,59 @@ export default function App() {
       accentText: 'text-indigo-600'
     },
 
-    // 爆款成就与互动数据 (Viral Achievement) - **INCLUDING NEW VIDEO**
+    // 爆款成就与互动数据 (Viral Achievement) - 抖音爆款高赞内容 (带抖音视频截图)
+    {
+      id: 'viral-dy-oppo',
+      title: 'OPPO Find X9 Pro 爆款深度上手实测',
+      category: 'viral',
+      platform: 'Douyin',
+      url: 'https://v.douyin.com/VzVjYnnTpE0/',
+      description: '单品上手体验爆款：直观真实展示细腻工业设计与旗舰影像细节，引发数万网友高赞互动，斩获 996.9万 顶级播放。',
+      tag: '深度上手',
+      metric: '996.9万 浏览',
+      image: '/viral_real_oppo.jpg',
+      accentBg: 'bg-emerald-50 border-emerald-200/60 text-emerald-600 hover:border-emerald-400',
+      accentText: 'text-emerald-600'
+    },
+    {
+      id: 'viral-dy-1',
+      title: 'vivo Y600 Turbo 续航与防摔硬核深度实测',
+      category: 'viral',
+      platform: 'Douyin',
+      url: 'https://v.douyin.com/VzVjYnnTpE0/',
+      description: '单品全面深度实测内容：流畅耐用不偏科，直击续航与耐摔核心卖点，获得 445.6万 浏览与深度认同。',
+      tag: '深度实测',
+      metric: '445.6万 浏览',
+      image: '/viral_real_2.jpg',
+      accentBg: 'bg-rose-50 border-rose-200/60 text-rose-600 hover:border-rose-400',
+      accentText: 'text-rose-600'
+    },
+    {
+      id: 'viral-dy-2',
+      title: 'vivo X Fold6 极致折叠屏人像体验',
+      category: 'viral',
+      platform: 'Douyin',
+      url: 'https://v.douyin.com/dA9teiYkMTE/',
+      description: '创新折叠屏实测：深度挖掘折叠屏大屏人像与多场景使用体验，获得 233.7万 浏览与热烈讨论。',
+      tag: '折叠屏爆款',
+      metric: '233.7万 浏览',
+      image: '/viral_real_3.jpg',
+      accentBg: 'bg-pink-50 border-pink-200/60 text-pink-600 hover:border-pink-400',
+      accentText: 'text-pink-600'
+    },
+    {
+      id: 'viral-dy-3',
+      title: 'vivo S60 发布会现场小田（田曦薇）热点',
+      category: 'viral',
+      platform: 'Douyin',
+      url: 'https://v.douyin.com/7G4HL_e5tns/',
+      description: '热点事件宣传内容：发布会现场小田（田曦薇）现场热点拉满，高效捕捉暴风流量，收获 409.4万 高赞播放。',
+      tag: '热点宣传',
+      metric: '409.4万 浏览',
+      image: '/viral_real_4.jpg',
+      accentBg: 'bg-purple-50 border-purple-200/60 text-purple-600 hover:border-purple-400',
+      accentText: 'text-purple-600'
+    },
     {
       id: 'viral-new',
       title: 'B站小众产品挖掘与跟风热潮引领',
@@ -400,7 +456,7 @@ export default function App() {
                   <p className="text-[10px] sm:text-xs text-slate-500 mt-1 uppercase font-mono font-semibold">全网累计播放</p>
                 </div>
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-indigo-300 transition-all">
-                  <span className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent">300万+</span>
+                  <span className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-transparent">500万+</span>
                   <p className="text-[10px] sm:text-xs text-slate-500 mt-1 uppercase font-mono font-semibold">单支最高播放</p>
                 </div>
                 <div className="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md hover:border-amber-300 transition-all">
@@ -546,7 +602,7 @@ export default function App() {
               <div className="w-12 h-12 rounded-2xl bg-indigo-50 border border-indigo-200 flex items-center justify-center text-indigo-600 mb-6 shadow-sm">
                 <Users size={24} />
               </div>
-              <span className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight block">300万+</span>
+              <span className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight block">500万+</span>
               <span className="text-sm font-bold text-slate-700 block mt-2">单支视频最高播放量</span>
               <p className="text-xs text-slate-500 mt-2 leading-relaxed">独立主策划的超级单品视频一经发出即破圈爆发，快速积累大量死忠粉与平台热推。</p>
             </div>
@@ -973,58 +1029,141 @@ export default function App() {
                   </div>
 
                   {/* Cards Grid for this category */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                    <AnimatePresence mode="popLayout">
-                      {catWorks.map((work, idx) => (
-                        <motion.a
-                          layout
-                          href={work.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          initial={{ opacity: 0, y: 15 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, scale: 0.95 }}
-                          transition={{ duration: 0.3, delay: idx * 0.05 }}
-                          key={work.id}
-                          className="group rounded-3xl p-6 bg-slate-50 border border-slate-200 cursor-pointer hover:border-blue-400 hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between shadow-sm"
-                        >
-                          <div className="space-y-4">
-                            {/* Top Platform & Category Header */}
-                            <div className="flex items-center justify-between">
-                              <span className="text-[10px] font-mono tracking-widest uppercase text-slate-500 font-semibold">
-                                {work.platform} / {work.tag}
-                              </span>
-                              <span className={`px-2.5 py-1 text-[10px] rounded-md font-bold border bg-white border-slate-200 ${work.accentText}`}>
-                                {cat.id === 'commercial' ? '品牌商单' : cat.id === 'narrative' ? '非遗人文' : '爆款成就'}
+                  {(() => {
+                    const imageWorks = catWorks.filter(w => !!w.image);
+                    const textWorks = catWorks.filter(w => !w.image);
+
+                    const renderWorkCard = (work: typeof works[0], idx: number) => (
+                      <motion.a
+                        layout
+                        href={work.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        initial={{ opacity: 0, y: 15 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, scale: 0.95 }}
+                        transition={{ duration: 0.3, delay: idx * 0.05 }}
+                        key={work.id}
+                        className="group rounded-3xl p-6 bg-slate-50 border border-slate-200 cursor-pointer hover:border-blue-400 hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between shadow-sm"
+                      >
+                        <div className="space-y-4">
+                          {/* Top Platform & Category Header */}
+                          <div className="flex items-center justify-between">
+                            <span className="text-[10px] font-mono tracking-widest uppercase text-slate-500 font-semibold">
+                              {work.platform} / {work.tag}
+                            </span>
+                            <span className={`px-2.5 py-1 text-[10px] rounded-md font-bold border bg-white border-slate-200 ${work.accentText}`}>
+                              {cat.id === 'commercial' ? '品牌商单' : cat.id === 'narrative' ? '非遗人文' : '爆款成就'}
+                            </span>
+                          </div>
+
+                          {/* Screenshot Image Preview with Hover Zoom Effect if image exists */}
+                          {work.image && (
+                            <div 
+                              onClick={(e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                setLightboxImage({ src: work.image!, title: work.title, metric: work.metric, url: work.url });
+                              }}
+                              className="relative overflow-hidden rounded-2xl bg-slate-950 border border-slate-200/80 shadow-xs group/img cursor-zoom-in aspect-[9/16] flex items-center justify-center"
+                            >
+                              <motion.img 
+                                src={work.image} 
+                                alt={work.title} 
+                                whileHover={{ scale: 1.04 }}
+                                transition={{ duration: 0.35, ease: "easeOut" }}
+                                className="w-full h-full object-contain object-bottom bg-slate-950"
+                                referrerPolicy="no-referrer"
+                              />
+                              
+                              {/* Hover Overlay Effect with Magnifier Badge - Bottom clearance guarantees un-obscured play count */}
+                              <div className="absolute inset-x-0 top-0 bottom-14 bg-slate-950/30 opacity-0 group-hover/img:opacity-100 transition-all duration-300 flex flex-col items-center justify-center p-4 text-center text-white space-y-2 backdrop-blur-[2px]">
+                                <div className="w-10 h-10 rounded-full bg-white/25 border border-white/40 flex items-center justify-center backdrop-blur-md shadow-lg transform scale-90 group-hover/img:scale-100 transition-all duration-300">
+                                  <ZoomIn size={20} className="text-white drop-shadow-md" />
+                                </div>
+                                <span className="text-[11px] font-bold font-mono tracking-wide bg-slate-900/90 px-3 py-1 rounded-full border border-white/20 shadow-md">
+                                  🔍 点击沉浸放大查看全图
+                                </span>
+                              </div>
+
+                              {/* Metric Tag Pill */}
+                              {work.metric && (
+                                <div className="absolute top-3 right-3 px-3 py-1.5 rounded-full bg-slate-950/90 backdrop-blur-md border border-amber-400/60 text-white shadow-xl flex items-center space-x-1.5 z-10">
+                                  <Flame size={14} className="text-amber-400 fill-amber-400 animate-pulse" />
+                                  <span className="text-xs sm:text-sm font-black font-mono tracking-tight text-amber-300 drop-shadow-md">
+                                    {work.metric}
+                                  </span>
+                                </div>
+                              )}
+                            </div>
+                          )}
+
+                          {/* Title */}
+                          <h3 className="text-base font-bold text-slate-800 group-hover:text-blue-600 transition-colors leading-snug">
+                            {work.title}
+                          </h3>
+
+                          {/* Prominent Play Count Highlight Badge */}
+                          {work.metric && (
+                            <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-xl bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-rose-500/10 border border-amber-300/80 shadow-2xs">
+                              <Flame size={15} className="text-amber-500 fill-amber-500 shrink-0" />
+                              <span className="text-xs font-bold text-amber-800/90">热度曝光：</span>
+                              <span className="text-xs sm:text-sm font-black font-mono tracking-tight text-amber-600 font-extrabold">
+                                {work.metric}
                               </span>
                             </div>
+                          )}
 
-                            {/* Title */}
-                            <h3 className="text-base font-bold text-slate-800 group-hover:text-blue-600 transition-colors leading-snug">
-                              {work.title}
-                            </h3>
+                          {/* Paragraph */}
+                          <p className="text-xs text-slate-500 leading-relaxed line-clamp-3">
+                            {work.description}
+                          </p>
+                        </div>
 
-                            {/* Paragraph */}
-                            <p className="text-xs text-slate-500 leading-relaxed line-clamp-3">
-                              {work.description}
-                            </p>
+                        {/* Bottom details and link trigger */}
+                        <div className="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500 font-mono">
+                          <span className="flex items-center space-x-1 text-slate-400">
+                            <ExternalLink size={12} />
+                            <span className="text-slate-500">{work.platform} 视频直达</span>
+                          </span>
+                          <span className="text-blue-600 group-hover:underline flex items-center space-x-1 text-[11px] font-bold">
+                            <span>立即观看</span>
+                            <ChevronRight size={12} />
+                          </span>
+                        </div>
+                      </motion.a>
+                    );
+
+                    if (imageWorks.length > 0) {
+                      return (
+                        <div className="space-y-8">
+                          {/* Video Screenshots Grid - 4 Columns */}
+                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                            <AnimatePresence mode="popLayout">
+                              {imageWorks.map((work, idx) => renderWorkCard(work, idx))}
+                            </AnimatePresence>
                           </div>
 
-                          {/* Bottom details and link trigger */}
-                          <div className="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500 font-mono">
-                            <span className="flex items-center space-x-1 text-slate-400">
-                              <ExternalLink size={12} />
-                              <span className="text-slate-500">{work.platform} 视频直达</span>
-                            </span>
-                            <span className="text-blue-600 group-hover:underline flex items-center space-x-1 text-[11px] font-bold">
-                              <span>立即观看</span>
-                              <ChevronRight size={12} />
-                            </span>
-                          </div>
-                        </motion.a>
-                      ))}
-                    </AnimatePresence>
-                  </div>
+                          {/* Text-based Works Grid - 3 Columns (viral-new & viral-1 start on a new row here) */}
+                          {textWorks.length > 0 && (
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                              <AnimatePresence mode="popLayout">
+                                {textWorks.map((work, idx) => renderWorkCard(work, idx + imageWorks.length))}
+                              </AnimatePresence>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    }
+
+                    return (
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                        <AnimatePresence mode="popLayout">
+                          {catWorks.map((work, idx) => renderWorkCard(work, idx))}
+                        </AnimatePresence>
+                      </div>
+                    );
+                  })()}
                 </div>
               );
             })}
@@ -1207,6 +1346,70 @@ export default function App() {
           © 2026 何栋. All rights reserved. 专为视频导演、高级自媒体创意策划及商业内容开发量身定制的无缝交互界面。
         </p>
       </footer>
+
+      {/* Lightbox Modal for High-Res Screenshot Magnification */}
+      <AnimatePresence>
+        {lightboxImage && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setLightboxImage(null)}
+            className="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-4 sm:p-8 cursor-zoom-out"
+          >
+            <motion.div 
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative max-w-md sm:max-w-lg w-full bg-slate-900 border border-slate-700/80 rounded-3xl overflow-hidden shadow-2xl flex flex-col cursor-default"
+            >
+              {/* Modal Top Header */}
+              <div className="p-4 sm:p-5 bg-slate-900/90 border-b border-slate-800 flex items-center justify-between text-white">
+                <div className="space-y-0.5">
+                  <h4 className="text-sm font-bold text-slate-100">{lightboxImage.title}</h4>
+                  {lightboxImage.metric && (
+                    <div className="inline-flex items-center space-x-1.5 px-2.5 py-1 rounded-md bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs sm:text-sm font-black font-mono tracking-tight mt-1">
+                      <Flame size={14} className="fill-amber-400 text-amber-400 animate-pulse" />
+                      <span>{lightboxImage.metric}</span>
+                    </div>
+                  )}
+                </div>
+                <button 
+                  onClick={() => setLightboxImage(null)}
+                  className="p-2 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors cursor-pointer"
+                >
+                  <X size={18} />
+                </button>
+              </div>
+
+              {/* Modal Main Image Display */}
+              <div className="p-3 sm:p-5 bg-slate-950 flex items-center justify-center max-h-[70vh] overflow-auto">
+                <img 
+                  src={lightboxImage.src} 
+                  alt={lightboxImage.title} 
+                  className="max-h-[60vh] w-auto object-contain rounded-2xl border border-slate-800 shadow-lg"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+
+              {/* Modal Footer Bar */}
+              <div className="p-4 bg-slate-900 border-t border-slate-800 flex items-center justify-between">
+                <span className="text-xs text-slate-400 font-mono">高清真实平台截图</span>
+                <a 
+                  href={lightboxImage.url} 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="px-5 py-2.5 rounded-xl text-xs font-bold bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white flex items-center space-x-1.5 transition-all shadow-md"
+                >
+                  <Play size={14} className="fill-current" />
+                  <span>跳转原视频</span>
+                </a>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
     </div>
   );

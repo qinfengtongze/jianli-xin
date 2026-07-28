@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4A3B32" />
+      <stop offset="50%" stop-color="#211812" />
+      <stop offset="100%" stop-color="#0D0907" />
+    </linearGradient>
+    <linearGradient id="shirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="360" height="640" fill="url(#bg2)" rx="16" />
+
+  <!-- Studio Lamp Soft Glow in Background -->
+  <circle cx="50" cy="220" r="100" fill="#F59E0B" opacity="0.25" filter="blur(20px)" />
+
+  <!-- Top status bar -->
+  <text x="20" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">17:53</text>
+  <text x="310" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">5G 95%</text>
+
+  <!-- Tech reviewer person in center -->
+  <g transform="translate(180, 360)">
+    <!-- T-Shirt Body -->
+    <path d="M -110 90 Q -80 0, -50 -40 Q 0 -50, 50 -40 Q 80 0, 110 90 Z" fill="url(#shirt)" />
+    
+    <!-- Neck & Mic -->
+    <rect x="-18" y="-70" width="36" height="40" fill="#D3A286" rx="10" />
+    <rect x="-10" y="-30" width="20" height="12" fill="#0F172A" rx="3" />
+    <text x="0" y="-22" font-size="6" fill="#FFF" font-weight="bold" text-anchor="middle">MOMA</text>
+
+    <!-- Head & Hair -->
+    <path d="M -45 -120 Q -48 -180, 0 -180 Q 48 -180, 45 -120 Q 40 -60, 0 -60 Q -40 -60, -45 -120 Z" fill="#D3A286" />
+    <!-- Black Hair -->
+    <path d="M -50 -130 C -45 -200, 45 -200, 50 -130 C 30 -160, -30 -160, -50 -130 Z" fill="#1E293B" />
+    <path d="M -48 -135 Q 0 -190, 48 -135 Q 10 -150, -48 -135 Z" fill="#0F172A" />
+
+    <!-- Glasses & Eyes -->
+    <rect x="-35" y="-125" width="28" height="20" rx="4" fill="none" stroke="#1E293B" stroke-width="2.5" />
+    <rect x="7" y="-125" width="28" height="20" rx="4" fill="none" stroke="#1E293B" stroke-width="2.5" />
+    <line x1="-7" y1="-115" x2="7" y2="-115" stroke="#1E293B" stroke-width="2" />
+    <circle cx="-21" cy="-115" r="3" fill="#0F172A" />
+    <circle cx="21" cy="-115" r="3" fill="#0F172A" />
+  </g>
+
+  <!-- Overlay text & comment bubble -->
+  <rect x="20" y="380" width="240" height="52" rx="14" fill="rgba(0,0,0,0.6)" />
+  <text x="32" y="398" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" fill="#CBD5E1">香喷喷的奶茶:</text>
+  <text x="32" y="414" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" font-weight="bold" fill="#FFF">真心觉得什么高刷、什么2K屏，</text>
+  <text x="32" y="426" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" font-weight="bold" fill="#FFF">都不如续航长和不怕摔</text>
+
+  <text x="30" y="465" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="18" font-weight="900" fill="#FFF" filter="drop-shadow(0px 2px 4px rgba(0,0,0,0.8))">Y600 Turbo也拿出了解决方案..</text>
+
+  <!-- Right sidebar buttons -->
+  <g transform="translate(305, 260)">
+    <circle cx="20" cy="20" r="18" fill="#FFDC00" stroke="#FFF" stroke-width="2"/>
+    <text x="20" y="24" font-size="9" font-weight="bold" fill="#000" text-anchor="middle">机圈</text>
+
+    <path d="M 20 70 C 10 55, 0 70, 20 88 C 40 70, 30 55, 20 70 Z" fill="#FFF"/>
+    <text x="20" y="102" font-size="10" font-weight="600" fill="#FFF" text-anchor="middle">1.5万</text>
+
+    <circle cx="20" cy="130" r="14" fill="#FFF"/>
+    <text x="20" y="156" font-size="10" font-weight="600" fill="#FFF" text-anchor="middle">801</text>
+
+    <polygon points="20,175 24,188 38,188 27,196 31,210 20,201 9,210 13,196 2,188 16,188" fill="#FFF"/>
+    <text x="20" y="224" font-size="10" font-weight="600" fill="#FFF" text-anchor="middle">1855</text>
+  </g>
+
+  <!-- Bottom metric pill -->
+  <rect x="0" y="595" width="360" height="45" fill="rgba(15, 23, 42, 0.9)" />
+  <path d="M 20 617 L 30 611 L 30 623 Z" fill="#F43F5E"/>
+  <text x="38" y="621" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="800" fill="#F43F5E">445.6万 浏览</text>
+  
+  <rect x="270" y="605" width="75" height="26" rx="6" fill="#E11D48" />
+  <text x="307" y="622" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="11" font-weight="bold" fill="#FFF" text-anchor="middle">续航实测</text>
+</svg>
