@@ -153,59 +153,7 @@ export default function App() {
       accentText: 'text-indigo-600'
     },
 
-    // 爆款成就与互动数据 (Viral Achievement) - 抖音爆款高赞内容 (带抖音视频截图)
-    {
-      id: 'viral-dy-oppo',
-      title: 'OPPO Find X9 Pro 爆款深度上手实测',
-      category: 'viral',
-      platform: 'Douyin',
-      url: 'https://v.douyin.com/VzVjYnnTpE0/',
-      description: '单品上手体验爆款：直观真实展示细腻工业设计与旗舰影像细节，引发数万网友高赞互动，斩获 996.9万 顶级播放。',
-      tag: '深度上手',
-      metric: '996.9万 浏览',
-      image: '/portfolio/oppo-x9-pro.jpg',
-      accentBg: 'bg-emerald-50 border-emerald-200/60 text-emerald-600 hover:border-emerald-400',
-      accentText: 'text-emerald-600'
-    },
-    {
-      id: 'viral-dy-1',
-      title: 'vivo Y600 Turbo 续航与防摔硬核深度实测',
-      category: 'viral',
-      platform: 'Douyin',
-      url: 'https://v.douyin.com/VzVjYnnTpE0/',
-      description: '单品全面深度实测内容：流畅耐用不偏科，直击续航与耐摔核心卖点，获得 445.6万 浏览与深度认同。',
-      tag: '深度实测',
-      metric: '445.6万 浏览',
-      image: '/portfolio/vivo-y600-turbo.jpg',
-      accentBg: 'bg-rose-50 border-rose-200/60 text-rose-600 hover:border-rose-400',
-      accentText: 'text-rose-600'
-    },
-    {
-      id: 'viral-dy-2',
-      title: 'vivo X Fold6 极致折叠屏人像体验',
-      category: 'viral',
-      platform: 'Douyin',
-      url: 'https://v.douyin.com/dA9teiYkMTE/',
-      description: '创新折叠屏实测：深度挖掘折叠屏大屏人像与多场景使用体验，获得 233.7万 浏览与热烈讨论。',
-      tag: '折叠屏爆款',
-      metric: '233.7万 浏览',
-      image: '/portfolio/vivo-xfold6.jpg',
-      accentBg: 'bg-pink-50 border-pink-200/60 text-pink-600 hover:border-pink-400',
-      accentText: 'text-pink-600'
-    },
-    {
-      id: 'viral-dy-3',
-      title: 'vivo S60 发布会现场小田（田曦薇）热点',
-      category: 'viral',
-      platform: 'Douyin',
-      url: 'https://v.douyin.com/7G4HL_e5tns/',
-      description: '热点事件宣传内容：发布会现场小田（田曦薇）现场热点拉满，高效捕捉暴风流量，收获 409.4万 高赞播放。',
-      tag: '热点宣传',
-      metric: '409.4万 浏览',
-      image: '/portfolio/vivo-s60.jpg',
-      accentBg: 'bg-purple-50 border-purple-200/60 text-purple-600 hover:border-purple-400',
-      accentText: 'text-purple-600'
-    },
+    // 爆款成就与互动数据 (Viral Achievement)
     {
       id: 'viral-new',
       title: 'B站小众产品挖掘与跟风热潮引领',
@@ -265,6 +213,59 @@ export default function App() {
       metric: '弹幕互动群',
       accentBg: 'bg-fuchsia-50 border-fuchsia-200/60 text-fuchsia-600 hover:border-fuchsia-400',
       accentText: 'text-fuchsia-600'
+    },
+    // 抖音爆款高赞内容 (带抖音视频截图)
+    {
+      id: 'viral-dy-oppo',
+      title: 'OPPO Find X9 Pro 爆款深度上手实测',
+      category: 'viral',
+      platform: 'Douyin',
+      url: 'https://v.douyin.com/VzVjYnnTpE0/',
+      description: '单品上手体验爆款：直观真实展示细腻工业设计与旗舰影像细节，引发数万网友高赞互动，斩获 996.9万 顶级播放。',
+      tag: '深度上手',
+      metric: '996.9万 浏览',
+      image: '/portfolio/oppo-x9-pro.jpg',
+      accentBg: 'bg-emerald-50 border-emerald-200/60 text-emerald-600 hover:border-emerald-400',
+      accentText: 'text-emerald-600'
+    },
+    {
+      id: 'viral-dy-1',
+      title: 'vivo Y600 Turbo 续航与防摔硬核深度实测',
+      category: 'viral',
+      platform: 'Douyin',
+      url: 'https://v.douyin.com/VzVjYnnTpE0/',
+      description: '单品全面深度实测内容：流畅耐用不偏科，直击续航与耐摔核心卖点，获得 445.6万 浏览与深度认同。',
+      tag: '深度实测',
+      metric: '445.6万 浏览',
+      image: '/portfolio/vivo-y600-turbo.jpg',
+      accentBg: 'bg-rose-50 border-rose-200/60 text-rose-600 hover:border-rose-400',
+      accentText: 'text-rose-600'
+    },
+    {
+      id: 'viral-dy-2',
+      title: 'vivo X Fold6 极致折叠屏人像体验',
+      category: 'viral',
+      platform: 'Douyin',
+      url: 'https://v.douyin.com/dA9teiYkMTE/',
+      description: '创新折叠屏实测：深度挖掘折叠屏大屏人像与多场景使用体验，获得 233.7万 浏览与热烈讨论。',
+      tag: '折叠屏爆款',
+      metric: '233.7万 浏览',
+      image: '/portfolio/vivo-xfold6.jpg',
+      accentBg: 'bg-pink-50 border-pink-200/60 text-pink-600 hover:border-pink-400',
+      accentText: 'text-pink-600'
+    },
+    {
+      id: 'viral-dy-3',
+      title: 'vivo S60 发布会现场小田（田曦薇）热点',
+      category: 'viral',
+      platform: 'Douyin',
+      url: 'https://v.douyin.com/7G4HL_e5tns/',
+      description: '热点事件宣传内容：发布会现场小田（田曦薇）现场热点拉满，高效捕捉暴风流量，收获 409.4万 高赞播放。',
+      tag: '热点宣传',
+      metric: '409.4万 浏览',
+      image: '/portfolio/vivo-s60.jpg',
+      accentBg: 'bg-purple-50 border-purple-200/60 text-purple-600 hover:border-purple-400',
+      accentText: 'text-purple-600'
     }
   ];
 
@@ -1134,24 +1135,40 @@ export default function App() {
                       </motion.a>
                     );
 
-                    if (imageWorks.length > 0) {
+                    if (textWorks.length > 0 && imageWorks.length > 0) {
                       return (
-                        <div className="space-y-8">
-                          {/* Video Screenshots Grid - 4 Columns */}
-                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                        <div className="space-y-10">
+                          {/* Text-based Works Grid - 3 Columns */}
+                          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                             <AnimatePresence mode="popLayout">
-                              {imageWorks.map((work, idx) => renderWorkCard(work, idx))}
+                              {textWorks.map((work, idx) => renderWorkCard(work, idx))}
                             </AnimatePresence>
                           </div>
 
-                          {/* Text-based Works Grid - 3 Columns (viral-new & viral-1 start on a new row here) */}
-                          {textWorks.length > 0 && (
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                          {/* Video Screenshots Grid - 4 Columns (Douyin viral cards placed after text cards) */}
+                          <div className="space-y-4">
+                            <div className="flex items-center space-x-3 pt-2">
+                              <span className="text-xs font-bold text-slate-500 font-mono tracking-wider">
+                                📱 抖音视频实测与热点爆款案例
+                              </span>
+                              <div className="h-px flex-1 bg-slate-200"></div>
+                            </div>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                               <AnimatePresence mode="popLayout">
-                                {textWorks.map((work, idx) => renderWorkCard(work, idx + imageWorks.length))}
+                                {imageWorks.map((work, idx) => renderWorkCard(work, idx + textWorks.length))}
                               </AnimatePresence>
                             </div>
-                          )}
+                          </div>
+                        </div>
+                      );
+                    }
+
+                    if (imageWorks.length > 0) {
+                      return (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                          <AnimatePresence mode="popLayout">
+                            {imageWorks.map((work, idx) => renderWorkCard(work, idx))}
+                          </AnimatePresence>
                         </div>
                       );
                     }
