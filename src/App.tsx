@@ -441,7 +441,7 @@ export default function App() {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   className="text-lg sm:text-xl text-slate-600 font-light max-w-2xl mx-auto lg:mx-0 leading-relaxed"
                 >
-                  专注高品质商业短视频、硬核科技数码种草、人文深度访谈的精细化内容研发。以导演之眼雕琢光影，用严密编导思维引爆流量。
+                  专注高品质商业长视频、短视频、硬核科技数码种草、人文深度访谈的精细化内容研发。以导演之眼雕琢光影，用严密编导思维引爆流量。
                 </motion.p>
               </div>
 
@@ -584,7 +584,7 @@ export default function App() {
           <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
             <h2 className="text-sm font-bold text-blue-600 tracking-widest uppercase font-mono font-semibold">实战业绩 · 数据说话</h2>
             <p className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">打造顶级自媒体内容生态</p>
-            <p className="text-slate-500 text-sm">深谙短视频分发机制与用户高留存心智，每一项成就皆是实实在在的硬核交付结果。</p>
+            <p className="text-slate-500 text-sm">深谙长视频、短视频分发机制与用户高留存心智，每一项成就皆是实实在在的硬核交付结果。</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 sm:gap-8">
