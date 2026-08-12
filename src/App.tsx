@@ -711,10 +711,6 @@ export default function App() {
                   主导高商业化自媒体账号。通过场景设计和产品差异化策划，每月稳定承接大厂数码/智能硬件多项商业合作。
                 </p>
               </div>
-              <div className="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between text-[11px] text-slate-500">
-                <span className="font-mono">粉丝量: 12万+</span>
-                <span className="text-blue-600 font-bold group-hover:underline">点击进入空间</span>
-              </div>
             </a>
 
             {/* Account 2 */}
@@ -738,10 +734,6 @@ export default function App() {
                 <p className="text-xs text-slate-600 leading-relaxed">
                   独立全面运营高技术厚度、犀利独到的数码评测阵地，多期精品视频突破行业常规点击，屡次登上全站热门。
                 </p>
-              </div>
-              <div className="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between text-[11px] text-slate-500">
-                <span className="font-mono">粉丝量: 7万+</span>
-                <span className="text-blue-600 font-bold group-hover:underline">点击进入空间</span>
               </div>
             </a>
 
@@ -767,10 +759,6 @@ export default function App() {
                   负责千万级话题下科技生活向核心视频的选题、脚本拆解与节奏导演，在快节奏语境中精准实现高带货转化。
                 </p>
               </div>
-              <div className="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between text-[11px] text-slate-500">
-                <span className="font-mono">粉丝量: 50万</span>
-                <span className="text-indigo-600 font-bold group-hover:underline">点击查看抖音</span>
-              </div>
             </a>
 
             {/* Account 4 */}
@@ -794,10 +782,6 @@ export default function App() {
                 <p className="text-xs text-slate-600 leading-relaxed">
                   主导及指点该头部大卡核心商单的创意视觉，擅长提炼品牌核心痛点，用电影级质感赋能高溢价商单交付。
                 </p>
-              </div>
-              <div className="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between text-[11px] text-slate-500">
-                <span className="font-mono">粉丝量: 120万+</span>
-                <span className="text-indigo-600 font-bold group-hover:underline">点击查看抖音</span>
               </div>
             </a>
 
@@ -846,9 +830,12 @@ export default function App() {
                 </div>
                 <div className="text-center">
                   <h3 className="text-xl sm:text-3xl font-extrabold text-white tracking-widest uppercase">导演作品集 · 视觉美学合集</h3>
-                  <p className="text-xs sm:text-sm text-slate-200 mt-2 max-w-lg mx-auto leading-relaxed">
-                    精选过去数年商业广告、产品Solo及极客数码美学短片。每一秒分镜都是光影编排的完美呈现。
-                  </p>
+                  <div className="mt-4 flex items-center justify-center">
+                    <div className="inline-flex items-center justify-center space-x-2 px-6 py-2.5 rounded-full bg-black/50 hover:bg-black/70 border border-white/40 hover:border-white/80 text-white text-xs sm:text-sm font-semibold tracking-wider shadow-lg backdrop-blur-md group-hover:scale-105 group-hover:bg-blue-600/90 group-hover:border-blue-400 group-hover:shadow-blue-500/30 transition-all duration-300">
+                      <Play size={14} className="fill-current ml-0.5" />
+                      <span>点击播放</span>
+                    </div>
+                  </div>
                 </div>
               </div>
 
