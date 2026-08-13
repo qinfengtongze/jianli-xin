@@ -214,6 +214,18 @@ export default function App() {
       accentBg: 'bg-fuchsia-50 border-fuchsia-200/60 text-fuchsia-600 hover:border-fuchsia-400',
       accentText: 'text-fuchsia-600'
     },
+    {
+      id: 'viral-5',
+      title: '手机产品深度解读分析',
+      category: 'viral',
+      platform: 'Bilibili',
+      url: 'https://www.bilibili.com/video/BV1wCKKe8Etp/?vd_source=679a4bb385b44f11f1b016dfb7241618',
+      description: '对老产品深度解析，延伸至品牌没落的解读',
+      tag: '深度解读',
+      metric: '品牌沉浮剖析',
+      accentBg: 'bg-indigo-50 border-indigo-200/60 text-indigo-600 hover:border-indigo-400',
+      accentText: 'text-indigo-600'
+    },
     // 抖音爆款高赞内容 (带抖音视频截图)
     {
       id: 'viral-dy-oppo',
