@@ -226,6 +226,42 @@ export default function App() {
       accentBg: 'bg-indigo-50 border-indigo-200/60 text-indigo-600 hover:border-indigo-400',
       accentText: 'text-indigo-600'
     },
+    {
+      id: 'viral-6',
+      title: 'OPPO Reno 10x变焦版解析',
+      category: 'viral',
+      platform: 'Bilibili',
+      url: 'https://www.bilibili.com/video/BV1NfzNBdE9Q/?vd_source=679a4bb385b44f11f1b016dfb7241618',
+      description: 'OPPO Reno 10x变焦版深度解析，全面拆解经典机型潜望影像与结构工业设计。',
+      tag: '产品解析',
+      metric: '经典机型解析',
+      accentBg: 'bg-teal-50 border-teal-200/60 text-teal-600 hover:border-teal-400',
+      accentText: 'text-teal-600'
+    },
+    {
+      id: 'viral-7',
+      title: '掌玩mini 3 ultra体验',
+      category: 'viral',
+      platform: 'Bilibili',
+      url: 'https://www.bilibili.com/video/BV1gBdUYqE4c/?vd_source=679a4bb385b44f11f1b016dfb7241618',
+      description: '掌玩mini 3 ultra深度上手体验，挖掘小众数码掌机的真实表现与产品特质。',
+      tag: '上手体验',
+      metric: '小众数码实测',
+      accentBg: 'bg-blue-50 border-blue-200/60 text-blue-600 hover:border-blue-400',
+      accentText: 'text-blue-600'
+    },
+    {
+      id: 'viral-8',
+      title: '华为P9 拍照体验',
+      category: 'viral',
+      platform: 'Bilibili',
+      url: 'https://www.bilibili.com/video/BV14w91YmEwn/?vd_source=679a4bb385b44f11f1b016dfb7241618',
+      description: '华为P9 经典双摄拍照体验，回溯首款徕卡双摄旗舰的德味影像质感与调色风格。',
+      tag: '拍照体验',
+      metric: '徕卡经典影像',
+      accentBg: 'bg-rose-50 border-rose-200/60 text-rose-600 hover:border-rose-400',
+      accentText: 'text-rose-600'
+    },
     // 抖音爆款高赞内容 (带抖音视频截图)
     {
       id: 'viral-dy-oppo',
