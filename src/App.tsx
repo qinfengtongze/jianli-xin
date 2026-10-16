@@ -1403,6 +1403,103 @@ export default function App() {
                       </motion.a>
                     );
 
+                    if (cat.id === 'commercial') {
+                      return (
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+                          <AnimatePresence mode="popLayout">
+                            {catWorks.map((work, idx) => (
+                              <motion.a
+                                layout
+                                href={work.url}
+                                target="_blank"
+                                rel="noreferrer"
+                                initial={{ opacity: 0, y: 15 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, scale: 0.95 }}
+                                transition={{ duration: 0.3, delay: idx * 0.05 }}
+                                key={work.id}
+                                className="group relative rounded-2xl sm:rounded-3xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-blue-500 shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between cursor-pointer"
+                              >
+                                {/* Unified 16:9 Cover Layout */}
+                                <div className="relative w-full aspect-video overflow-hidden bg-slate-950 flex items-center justify-center">
+                                  {work.isVertical ? (
+                                    <>
+                                      {/* Soft blurred ambient dark background for vertical short video */}
+                                      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                                        <img
+                                          src={work.image}
+                                          alt=""
+                                          aria-hidden="true"
+                                          className="w-full h-full object-cover blur-xl scale-125 opacity-35 brightness-50"
+                                        />
+                                        <div className="absolute inset-0 bg-slate-950/65" />
+                                      </div>
+                                      {/* Complete vertical cover without stretching or cropping */}
+                                      <img
+                                        src={work.image}
+                                        alt={work.title}
+                                        className="relative z-10 h-full w-auto object-contain mx-auto drop-shadow-2xl group-hover:scale-105 transition-transform duration-500 ease-out"
+                                        referrerPolicy="no-referrer"
+                                      />
+                                    </>
+                                  ) : (
+                                    /* 16:9 horizontal cover */
+                                    <img
+                                      src={work.image}
+                                      alt={work.title}
+                                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                                      referrerPolicy="no-referrer"
+                                    />
+                                  )}
+
+                                  {/* Centered Play Button */}
+                                  <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
+                                    <div className="w-12 h-12 rounded-full bg-slate-950/60 backdrop-blur-md border border-white/30 text-white flex items-center justify-center shadow-xl transform group-hover:scale-110 group-hover:bg-blue-600/90 group-hover:border-blue-400 transition-all duration-300">
+                                      <Play size={20} className="fill-white text-white ml-0.5" />
+                                    </div>
+                                  </div>
+
+                                  {/* Bottom Dark Gradient Mask with Tags & Title */}
+                                  <div className="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-slate-950 via-slate-950/75 to-transparent pt-14 pb-4 px-5 flex flex-col justify-end pointer-events-none">
+                                    {/* Platform & Project Type Badges (visual hierarchy matching viral cards) */}
+                                    <div className="mb-2 flex items-center gap-2">
+                                      <span className="px-2 py-0.5 rounded-md text-[11px] font-bold font-mono tracking-wide bg-white/15 backdrop-blur-md border border-white/25 text-slate-200 shadow-xs">
+                                        {work.platform}
+                                      </span>
+                                      <span className="px-2 py-0.5 rounded-md text-[11px] font-bold font-mono tracking-wide bg-blue-500/25 backdrop-blur-md border border-blue-400/40 text-blue-200 shadow-xs">
+                                        {work.tag}
+                                      </span>
+                                    </div>
+
+                                    {/* Title (bold white overlay) */}
+                                    <h3 className="text-white text-base sm:text-lg font-bold leading-snug drop-shadow-md group-hover:text-blue-300 transition-colors line-clamp-2">
+                                      {work.title}
+                                    </h3>
+                                  </div>
+                                </div>
+
+                                {/* Concise Description Body */}
+                                <div className="p-5 flex-1 flex flex-col justify-between space-y-4 bg-slate-900 border-t border-slate-800/80">
+                                  <p className="text-sm text-slate-300 leading-relaxed">
+                                    {work.description}
+                                  </p>
+                                  <div className="pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono">
+                                    <span className="text-slate-400 flex items-center gap-1.5">
+                                      <ExternalLink size={12} />
+                                      <span>{work.platform} 视频直达</span>
+                                    </span>
+                                    <span className="text-blue-400 font-semibold group-hover:underline flex items-center gap-1">
+                                      <span>观看视频 &rarr;</span>
+                                    </span>
+                                  </div>
+                                </div>
+                              </motion.a>
+                            ))}
+                          </AnimatePresence>
+                        </div>
+                      );
+                    }
+
                     if (cat.id === 'viral') {
                       const biliWorks = catWorks.filter(w => w.platform === 'Bilibili');
                       const douyinWorks = catWorks.filter(w => w.platform === 'Douyin');
