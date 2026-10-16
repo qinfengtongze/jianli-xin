@@ -869,16 +869,25 @@ export default function App() {
             rel="noreferrer"
             className="block group relative rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-xl transition-all"
           >
-            {/* Cinematic background */}
+            {/* Cinematic background with user cover image */}
             <div className="relative w-full h-[240px] sm:h-[380px] bg-slate-950 flex flex-col justify-between p-6 sm:p-12 overflow-hidden">
               
-              {/* Overlay with subtle animated movie scanner line or dark vignette */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/30 group-hover:via-black/20 transition-all duration-500 z-10"></div>
-              <div className="absolute inset-0 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:24px_24px] opacity-10"></div>
+              {/* Background Cover Image */}
+              <img
+                src="/video-covers/showreel-montage.png"
+                alt="导演作品集 · 视觉美学合集"
+                className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                referrerPolicy="no-referrer"
+              />
+
+              {/* Dark Gradient Mask (transparent to deep black, preserving visibility while keeping typography clear) */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/55 to-black/40 group-hover:via-black/45 transition-all duration-500 z-10 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-black/25 pointer-events-none z-10"></div>
+              <div className="absolute inset-0 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none z-10"></div>
               
               {/* Artistic Background glow */}
-              <div className="absolute top-[20%] right-[30%] w-60 h-60 rounded-full bg-blue-500/10 blur-[80px] group-hover:bg-blue-500/15 transition-all"></div>
-              <div className="absolute bottom-[10%] left-[20%] w-80 h-80 rounded-full bg-indigo-600/5 blur-[100px]"></div>
+              <div className="absolute top-[20%] right-[30%] w-60 h-60 rounded-full bg-blue-500/10 blur-[80px] group-hover:bg-blue-500/15 transition-all pointer-events-none z-10"></div>
+              <div className="absolute bottom-[10%] left-[20%] w-80 h-80 rounded-full bg-indigo-600/5 blur-[100px] pointer-events-none z-10"></div>
 
               {/* Top Details */}
               <div className="relative z-20 flex justify-between items-center">
@@ -895,7 +904,7 @@ export default function App() {
                   <Play size={24} className="ml-1 fill-current" />
                 </div>
                 <div className="text-center">
-                  <h3 className="text-xl sm:text-3xl font-extrabold text-white tracking-widest uppercase">导演作品集 · 视觉美学合集</h3>
+                  <h3 className="text-xl sm:text-3xl font-extrabold text-white tracking-widest uppercase drop-shadow-md">导演作品集 · 视觉美学合集</h3>
                   <div className="mt-4 flex items-center justify-center">
                     <div className="inline-flex items-center justify-center space-x-2 px-6 py-2.5 rounded-full bg-black/50 hover:bg-black/70 border border-white/40 hover:border-white/80 text-white text-xs sm:text-sm font-semibold tracking-wider shadow-lg backdrop-blur-md group-hover:scale-105 group-hover:bg-blue-600/90 group-hover:border-blue-400 group-hover:shadow-blue-500/30 transition-all duration-300">
                       <Play size={14} className="fill-current ml-0.5" />
@@ -906,7 +915,7 @@ export default function App() {
               </div>
 
               {/* Bottom detail action */}
-              <div className="relative z-20 flex flex-col sm:flex-row items-center justify-between gap-2 pt-4 border-t border-white/10 text-xs text-slate-400">
+              <div className="relative z-20 flex flex-col sm:flex-row items-center justify-between gap-2 pt-4 border-t border-white/10 text-xs text-slate-300">
                 <span className="italic">“电影感的底色，是克制而深邃的高级感。”</span>
                 <span className="text-blue-400 font-bold tracking-wider uppercase group-hover:underline flex items-center space-x-1">
                   <span>点击进入新片场主页查看更多</span>
