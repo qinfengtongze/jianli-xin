@@ -161,9 +161,10 @@ export default function App() {
       category: 'viral',
       platform: 'Bilibili',
       url: 'https://www.bilibili.com/video/BV1Gx37zUEgj/?vd_source=679a4bb385b44f11f1b016dfb7241618',
+      image: '/video-covers/bv1gx37zuegj.jpg',
+      tag: '题材开创',
+      metric: '题材开创',
       description: '挖掘小众产品，在B站较早发布，且引起跟风热潮，实现同类题材中播放与互动遥遥领先。',
-      tag: '题材开创者',
-      metric: '独家首发 / 引领风潮',
       accentBg: 'bg-violet-50 border-violet-200/60 text-violet-600 hover:border-violet-400',
       accentText: 'text-violet-600'
     },
@@ -173,9 +174,10 @@ export default function App() {
       category: 'viral',
       platform: 'Bilibili',
       url: 'https://www.bilibili.com/video/BV1xf4y1s7p1/',
+      image: '/video-covers/bv1xf4y1s7p1.jpg',
+      tag: '300万+播放',
+      metric: '300万+播放',
       description: '精准把控大众情绪和平台算法推送黄金时间，发布即大爆，快速斩获300万+全网瞩目播放量。',
-      tag: '顶级爆款',
-      metric: '3,000,000+ 播放',
       accentBg: 'bg-rose-50 border-rose-200/60 text-rose-600 hover:border-rose-400',
       accentText: 'text-rose-600'
     },
@@ -185,9 +187,10 @@ export default function App() {
       category: 'viral',
       platform: 'Bilibili',
       url: 'https://www.bilibili.com/video/BV1uF411k7ki/',
-      description: '通过打磨“前10秒黄金悬念”与高信息密度钩子设计，大幅度减少中途跳出，拉升核心完播率与转化率。',
+      image: '/video-covers/bv1uf411k7ki.jpg',
       tag: '黄金留存',
-      metric: '高完播率神作',
+      metric: '黄金留存',
+      description: '通过打磨“前10秒黄金悬念”与高信息密度钩子设计，大幅度减少中途跳出，拉升核心完播率与转化率。',
       accentBg: 'bg-cyan-50 border-cyan-200/60 text-cyan-600 hover:border-cyan-400',
       accentText: 'text-cyan-600'
     },
@@ -197,9 +200,10 @@ export default function App() {
       category: 'viral',
       platform: 'Bilibili',
       url: 'https://www.bilibili.com/video/BV1oV411a7tE/',
-      description: '出色的社会议题穿透力与剪辑质感，获得平台算法顶级权重扶持，直达全站综合排行榜前列。',
-      tag: '排行榜荣誉',
+      image: '/video-covers/bv1ov411a7te.jpg',
+      tag: '全站综合 Top 56',
       metric: '全站综合 Top 56',
+      description: '出色的社会议题穿透力与剪辑质感，获得平台算法顶级权重扶持，直达全站综合排行榜前列。',
       accentBg: 'bg-amber-50 border-amber-200/60 text-amber-600 hover:border-amber-400',
       accentText: 'text-amber-600'
     },
@@ -209,9 +213,10 @@ export default function App() {
       category: 'viral',
       platform: 'Bilibili',
       url: 'https://www.bilibili.com/video/BV14G411W7YJ/',
+      image: '/video-covers/bv14g411w7yj.jpg',
+      tag: '幽默吐槽',
+      metric: '幽默吐槽',
       description: '采用犀利、幽默而不失专业底色的吐槽脱口秀风格，精准命中大众购买雷点，激发弹幕评论狂热裂变。',
-      tag: '强粘性吐槽',
-      metric: '弹幕互动群',
       accentBg: 'bg-fuchsia-50 border-fuchsia-200/60 text-fuchsia-600 hover:border-fuchsia-400',
       accentText: 'text-fuchsia-600'
     },
@@ -221,9 +226,10 @@ export default function App() {
       category: 'viral',
       platform: 'Bilibili',
       url: 'https://www.bilibili.com/video/BV1wCKKe8Etp/?vd_source=679a4bb385b44f11f1b016dfb7241618',
-      description: '对老产品深度解析，延伸至品牌没落的解读',
+      image: '/video-covers/bv1wckke8etp.jpg',
       tag: '深度解读',
-      metric: '品牌沉浮剖析',
+      metric: '深度解读',
+      description: '对老产品深度解析，延伸至品牌没落的解读',
       accentBg: 'bg-indigo-50 border-indigo-200/60 text-indigo-600 hover:border-indigo-400',
       accentText: 'text-indigo-600'
     },
@@ -233,9 +239,10 @@ export default function App() {
       category: 'viral',
       platform: 'Bilibili',
       url: 'https://www.bilibili.com/video/BV1NfzNBdE9Q/?vd_source=679a4bb385b44f11f1b016dfb7241618',
-      description: 'OPPO Reno 10x变焦版深度解析，全面拆解经典机型潜望影像与结构工业设计。',
+      image: '/video-covers/bv1nfznbde9q.jpg',
       tag: '产品解析',
-      metric: '经典机型解析',
+      metric: '产品解析',
+      description: 'OPPO Reno 10x变焦版深度解析，全面拆解经典机型潜望影像与结构工业设计。',
       accentBg: 'bg-teal-50 border-teal-200/60 text-teal-600 hover:border-teal-400',
       accentText: 'text-teal-600'
     },
@@ -245,9 +252,10 @@ export default function App() {
       category: 'viral',
       platform: 'Bilibili',
       url: 'https://www.bilibili.com/video/BV1gBdUYqE4c/?vd_source=679a4bb385b44f11f1b016dfb7241618',
-      description: '掌玩mini 3 ultra深度上手体验，挖掘小众数码掌机的真实表现与产品特质。',
+      image: '/video-covers/bv1gbduyqe4c.jpg',
       tag: '上手体验',
-      metric: '小众数码实测',
+      metric: '上手体验',
+      description: '掌玩mini 3 ultra深度上手体验，挖掘小众数码掌机的真实表现与产品特质。',
       accentBg: 'bg-blue-50 border-blue-200/60 text-blue-600 hover:border-blue-400',
       accentText: 'text-blue-600'
     },
@@ -257,9 +265,10 @@ export default function App() {
       category: 'viral',
       platform: 'Bilibili',
       url: 'https://www.bilibili.com/video/BV14w91YmEwn/?vd_source=679a4bb385b44f11f1b016dfb7241618',
+      image: '/video-covers/bv14w91ymewn.jpg',
+      tag: '徕卡影像',
+      metric: '徕卡影像',
       description: '华为P9 经典双摄拍照体验，回溯首款徕卡双摄旗舰的德味影像质感与调色风格。',
-      tag: '拍照体验',
-      metric: '徕卡经典影像',
       accentBg: 'bg-rose-50 border-rose-200/60 text-rose-600 hover:border-rose-400',
       accentText: 'text-rose-600'
     },
@@ -968,8 +977,8 @@ export default function App() {
               {
                 id: 'feed-3',
                 cover: '/video-cover-03.png',
-                title: '耳机配饰',
-                url: 'https://my.feishu.cn/file/H8PKbdafVodlKex0sd8c4KOqnvg?from=from_copylink',
+                title: '头戴耳机',
+                url: 'https://my.feishu.cn/file/BEPpbHqZGoxxXfxjPNmcDhRJnOd?from=from_copylink',
                 tagColor: 'bg-amber-500/20 text-amber-300 border-amber-500/30'
               },
               {
@@ -1310,6 +1319,96 @@ export default function App() {
                       </motion.a>
                     );
 
+                    if (cat.id === 'viral') {
+                      const biliWorks = catWorks.filter(w => w.platform === 'Bilibili');
+                      const douyinWorks = catWorks.filter(w => w.platform === 'Douyin');
+
+                      return (
+                        <div className="space-y-12">
+                          {/* 9 Bilibili Viral Works Grid - 3 Columns Responsive */}
+                          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                            <AnimatePresence mode="popLayout">
+                              {biliWorks.map((work, idx) => (
+                                <motion.a
+                                  layout
+                                  href={work.url}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  initial={{ opacity: 0, y: 15 }}
+                                  animate={{ opacity: 1, y: 0 }}
+                                  exit={{ opacity: 0, scale: 0.95 }}
+                                  transition={{ duration: 0.3, delay: idx * 0.05 }}
+                                  key={work.id}
+                                  className="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-200/80 shadow-xs hover:shadow-xl hover:border-blue-500 hover:-translate-y-1 transition-all duration-300 flex flex-col cursor-pointer"
+                                >
+                                  {/* Unified Cover Aspect Ratio */}
+                                  <div className="relative w-full aspect-[16/10] overflow-hidden bg-slate-950">
+                                    <img
+                                      src={work.image}
+                                      alt={work.title}
+                                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                                      referrerPolicy="no-referrer"
+                                    />
+
+                                    {/* Center Play Button on Hover */}
+                                    <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                      <div className="w-12 h-12 rounded-full bg-blue-600/90 text-white flex items-center justify-center shadow-lg backdrop-blur-sm transform scale-90 group-hover:scale-100 transition-transform">
+                                        <Play size={18} className="fill-current ml-0.5" />
+                                      </div>
+                                    </div>
+
+                                    {/* Bottom Dark Gradient Overlay with Title, Key Data & Link */}
+                                    <div className="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-slate-950/95 via-slate-950/70 to-transparent pt-12 pb-3.5 px-4 flex flex-col justify-end pointer-events-none">
+                                      {/* Key Data / Honor / Topic Tag */}
+                                      {(work.metric || work.tag) && (
+                                        <div className="mb-1.5 flex items-center">
+                                          <span className="px-2 py-0.5 rounded-md text-[11px] font-bold font-mono tracking-tight bg-blue-500/25 border border-blue-400/40 text-blue-200 shadow-xs flex items-center gap-1">
+                                            {work.metric?.includes('播放') || work.metric?.includes('Top') ? (
+                                              <Flame size={12} className="text-amber-400 fill-amber-400" />
+                                            ) : null}
+                                            <span>{work.metric || work.tag}</span>
+                                          </span>
+                                        </div>
+                                      )}
+
+                                      {/* Title (max 2 lines) */}
+                                      <h3 className="text-white text-sm sm:text-base font-bold line-clamp-2 leading-snug drop-shadow-sm group-hover:text-blue-300 transition-colors">
+                                        {work.title}
+                                      </h3>
+
+                                      {/* Minimalist Action Link */}
+                                      <div className="mt-2 pt-2 border-t border-white/10 flex items-center justify-end text-xs font-mono">
+                                        <span className="text-blue-400 font-semibold group-hover:underline flex items-center gap-1">
+                                          <span>观看视频 &rarr;</span>
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </motion.a>
+                              ))}
+                            </AnimatePresence>
+                          </div>
+
+                          {/* Douyin Video Screenshots Grid - 4 Columns */}
+                          {douyinWorks.length > 0 && (
+                            <div className="space-y-4">
+                              <div className="flex items-center space-x-3 pt-2">
+                                <span className="text-xs font-bold text-slate-500 font-mono tracking-wider">
+                                  📱 抖音视频实测与热点爆款案例
+                                </span>
+                                <div className="h-px flex-1 bg-slate-200"></div>
+                              </div>
+                              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                                <AnimatePresence mode="popLayout">
+                                  {douyinWorks.map((work, idx) => renderWorkCard(work, idx + biliWorks.length))}
+                                </AnimatePresence>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    }
+
                     if (textWorks.length > 0 && imageWorks.length > 0) {
                       return (
                         <div className="space-y-10">
@@ -1320,7 +1419,7 @@ export default function App() {
                             </AnimatePresence>
                           </div>
 
-                          {/* Video Screenshots Grid - 4 Columns (Douyin viral cards placed after text cards) */}
+                          {/* Video Screenshots Grid - 4 Columns */}
                           <div className="space-y-4">
                             <div className="flex items-center space-x-3 pt-2">
                               <span className="text-xs font-bold text-slate-500 font-mono tracking-wider">
