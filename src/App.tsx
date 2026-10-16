@@ -48,6 +48,7 @@ interface WorkItem {
   accentBg: string;
   accentText: string;
   image?: string;
+  isVertical?: boolean;
 }
 
 export default function App() {
@@ -91,7 +92,8 @@ export default function App() {
       category: 'commercial',
       platform: 'Bilibili',
       url: 'https://www.bilibili.com/video/BV1SMEtzxEjN/',
-      description: '融合视觉美学与技术拆解，将超高清画质与硬核电视参数做精细化场景落地，兼具商业转化与艺术质感。',
+      image: '/video-covers/commercial-tcl-tv.jpg',
+      description: '用场景化影像呈现 Mini LED 画质与技术亮点。',
       tag: '高端商单',
       accentBg: 'bg-red-50 border-red-200/60 text-red-600 hover:border-red-400',
       accentText: 'text-red-600'
@@ -102,7 +104,8 @@ export default function App() {
       category: 'commercial',
       platform: 'Bilibili',
       url: 'https://www.bilibili.com/video/BV1aVTTzGEEx/',
-      description: '人体工学设计与现代职场场景叙事高度融合，用镜头深度还原“清闲”的舒适体验与设计美学。',
+      image: '/video-covers/commercial-qingxian-chair.jpg',
+      description: '结合真实办公体验，展示人体工学设计。',
       tag: '智能家居',
       accentBg: 'bg-blue-50 border-blue-200/60 text-blue-600 hover:border-blue-400',
       accentText: 'text-blue-600'
@@ -113,7 +116,9 @@ export default function App() {
       category: 'commercial',
       platform: 'Douyin',
       url: 'https://v.douyin.com/i6HXduFH1Tc/',
-      description: '适配快节奏、强逻辑、高吸引力留存周期的抖音垂直种草内容，实现超高点赞与商品转化。',
+      image: '/video-covers/commercial-douyin-seeding.jpg',
+      isVertical: true,
+      description: '突出产品核心卖点，适配短视频节奏。',
       tag: '抖音种草',
       accentBg: 'bg-pink-50 border-pink-200/60 text-pink-600 hover:border-pink-400',
       accentText: 'text-pink-600'
@@ -124,7 +129,9 @@ export default function App() {
       category: 'commercial',
       platform: 'Bilibili',
       url: 'https://www.bilibili.com/video/BV12hBMYME7W/',
-      description: '将智能洗碗机的核心卖点无缝嵌入日常家庭痛点叙事，通过富有生活温度的情感镜头打动消费者。',
+      image: '/video-covers/commercial-midea-dishwasher.jpg',
+      isVertical: true,
+      description: '以家庭场景呈现产品功能与使用体验。',
       tag: '场景商单',
       accentBg: 'bg-emerald-50 border-emerald-200/60 text-emerald-600 hover:border-emerald-400',
       accentText: 'text-emerald-600'
@@ -137,7 +144,8 @@ export default function App() {
       category: 'narrative',
       platform: 'Bilibili',
       url: 'https://www.bilibili.com/video/BV1V3LmzLEnX/',
-      description: '联动多方视角和数码达人，采用高端写实布光和多机位采访剪辑，生动传达创作者的内核情感与时代思考。',
+      image: '/video-covers/narrative-interview-vivo-x200.jpg',
+      description: '联动数码创作者，呈现真实体验与观点。',
       tag: '深度访谈',
       accentBg: 'bg-amber-50 border-amber-200/60 text-amber-600 hover:border-amber-400',
       accentText: 'text-amber-600'
@@ -148,7 +156,8 @@ export default function App() {
       category: 'narrative',
       platform: 'Bilibili',
       url: 'https://www.bilibili.com/video/BV1TeiMBfEoF/',
-      description: '深度探索中国传统非遗文化与现代前沿科技数码的破壁融合，赋予冰冷数码硬件以国潮温度与思想厚度。',
+      image: '/video-covers/narrative-iphone-knife-heritage.jpg',
+      description: '结合传统非遗与数码产品，呈现跨界创意。',
       tag: '国潮非遗',
       accentBg: 'bg-indigo-50 border-indigo-200/60 text-indigo-600 hover:border-indigo-400',
       accentText: 'text-indigo-600'
@@ -1226,6 +1235,7 @@ export default function App() {
                   {(() => {
                     const imageWorks = catWorks.filter(w => !!w.image);
                     const textWorks = catWorks.filter(w => !w.image);
+                    const isCommOrNarr = cat.id === 'commercial' || cat.id === 'narrative';
 
                     const renderWorkCard = (work: typeof works[0], idx: number) => (
                       <motion.a
@@ -1253,43 +1263,108 @@ export default function App() {
 
                           {/* Screenshot Image Preview with Hover Zoom Effect if image exists */}
                           {work.image && (
-                            <div 
-                              onClick={(e) => {
-                                e.preventDefault();
-                                e.stopPropagation();
-                                setLightboxImage({ src: work.image!, title: work.title, metric: work.metric, url: work.url });
-                              }}
-                              className="relative overflow-hidden rounded-2xl bg-slate-950 border border-slate-200/80 shadow-xs group/img cursor-zoom-in aspect-[9/16] flex items-center justify-center"
-                            >
-                              <motion.img 
-                                src={work.image} 
-                                alt={work.title} 
-                                whileHover={{ scale: 1.04 }}
-                                transition={{ duration: 0.35, ease: "easeOut" }}
-                                className="w-full h-full object-contain object-bottom bg-slate-950"
-                                referrerPolicy="no-referrer"
-                              />
-                              
-                              {/* Hover Overlay Effect with Magnifier Badge - Bottom clearance guarantees un-obscured play count */}
-                              <div className="absolute inset-x-0 top-0 bottom-14 bg-slate-950/30 opacity-0 group-hover/img:opacity-100 transition-all duration-300 flex flex-col items-center justify-center p-4 text-center text-white space-y-2 backdrop-blur-[2px]">
-                                <div className="w-10 h-10 rounded-full bg-white/25 border border-white/40 flex items-center justify-center backdrop-blur-md shadow-lg transform scale-90 group-hover/img:scale-100 transition-all duration-300">
-                                  <ZoomIn size={20} className="text-white drop-shadow-md" />
-                                </div>
-                                <span className="text-[11px] font-bold font-mono tracking-wide bg-slate-900/90 px-3 py-1 rounded-full border border-white/20 shadow-md">
-                                  🔍 点击沉浸放大查看全图
-                                </span>
-                              </div>
+                            isCommOrNarr ? (
+                              <div 
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  e.stopPropagation();
+                                  setLightboxImage({ src: work.image!, title: work.title, metric: work.metric, url: work.url });
+                                }}
+                                className="relative overflow-hidden rounded-2xl bg-slate-900 border border-slate-200/80 shadow-xs group/img cursor-zoom-in aspect-video flex items-center justify-center"
+                              >
+                                {work.isVertical ? (
+                                  <>
+                                    {/* Ambient blurred background for vertical video to fill 16:9 frame */}
+                                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                                      <img 
+                                        src={work.image} 
+                                        alt="" 
+                                        aria-hidden="true"
+                                        className="w-full h-full object-cover blur-xl scale-125 opacity-35 brightness-50"
+                                      />
+                                      <div className="absolute inset-0 bg-slate-950/60" />
+                                    </div>
+                                    {/* Full vertical cover without stretching or cropping */}
+                                    <motion.img 
+                                      src={work.image} 
+                                      alt={work.title} 
+                                      whileHover={{ scale: 1.03 }}
+                                      transition={{ duration: 0.35, ease: "easeOut" }}
+                                      className="relative z-10 h-full w-auto object-contain mx-auto drop-shadow-xl"
+                                      referrerPolicy="no-referrer"
+                                    />
+                                  </>
+                                ) : (
+                                  /* 16:9 horizontal cover */
+                                  <motion.img 
+                                    src={work.image} 
+                                    alt={work.title} 
+                                    whileHover={{ scale: 1.05 }}
+                                    transition={{ duration: 0.35, ease: "easeOut" }}
+                                    className="w-full h-full object-cover"
+                                    referrerPolicy="no-referrer"
+                                  />
+                                )}
 
-                              {/* Metric Tag Pill */}
-                              {work.metric && (
-                                <div className="absolute top-3 right-3 px-3 py-1.5 rounded-full bg-slate-950/90 backdrop-blur-md border border-amber-400/60 text-white shadow-xl flex items-center space-x-1.5 z-10">
-                                  <Flame size={14} className="text-amber-400 fill-amber-400 animate-pulse" />
-                                  <span className="text-xs sm:text-sm font-black font-mono tracking-tight text-amber-300 drop-shadow-md">
-                                    {work.metric}
+                                {/* Subtle gradient overlay for readability and contrast */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/15 to-transparent pointer-events-none z-20" />
+
+                                {/* Play button badge */}
+                                <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
+                                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-slate-950/65 backdrop-blur-md border border-white/30 flex items-center justify-center text-white shadow-lg group-hover:scale-110 group-hover:bg-blue-600/90 group-hover:border-blue-400 transition-all duration-300">
+                                    <Play size={18} className="fill-white text-white translate-x-0.5" />
+                                  </div>
+                                </div>
+
+                                {/* Metric Tag Pill */}
+                                {work.metric && (
+                                  <div className="absolute top-2.5 right-2.5 px-2.5 py-1 rounded-full bg-slate-950/85 backdrop-blur-md border border-amber-400/50 text-white shadow-lg flex items-center space-x-1 z-30">
+                                    <Flame size={12} className="text-amber-400 fill-amber-400" />
+                                    <span className="text-[11px] font-bold font-mono text-amber-300">
+                                      {work.metric}
+                                    </span>
+                                  </div>
+                                )}
+                              </div>
+                            ) : (
+                              <div 
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  e.stopPropagation();
+                                  setLightboxImage({ src: work.image!, title: work.title, metric: work.metric, url: work.url });
+                                }}
+                                className="relative overflow-hidden rounded-2xl bg-slate-950 border border-slate-200/80 shadow-xs group/img cursor-zoom-in aspect-[9/16] flex items-center justify-center"
+                              >
+                                <motion.img 
+                                  src={work.image} 
+                                  alt={work.title} 
+                                  whileHover={{ scale: 1.04 }}
+                                  transition={{ duration: 0.35, ease: "easeOut" }}
+                                  className="w-full h-full object-contain object-bottom bg-slate-950"
+                                  referrerPolicy="no-referrer"
+                                />
+                                
+                                {/* Hover Overlay Effect with Magnifier Badge */}
+                                <div className="absolute inset-x-0 top-0 bottom-14 bg-slate-950/30 opacity-0 group-hover/img:opacity-100 transition-all duration-300 flex flex-col items-center justify-center p-4 text-center text-white space-y-2 backdrop-blur-[2px]">
+                                  <div className="w-10 h-10 rounded-full bg-white/25 border border-white/40 flex items-center justify-center backdrop-blur-md shadow-lg transform scale-90 group-hover/img:scale-100 transition-all duration-300">
+                                    <ZoomIn size={20} className="text-white drop-shadow-md" />
+                                  </div>
+                                  <span className="text-[11px] font-bold font-mono tracking-wide bg-slate-900/90 px-3 py-1 rounded-full border border-white/20 shadow-md">
+                                    🔍 点击沉浸放大查看全图
                                   </span>
                                 </div>
-                              )}
-                            </div>
+
+                                {/* Metric Tag Pill */}
+                                {work.metric && (
+                                  <div className="absolute top-3 right-3 px-3 py-1.5 rounded-full bg-slate-950/90 backdrop-blur-md border border-amber-400/60 text-white shadow-xl flex items-center space-x-1.5 z-10">
+                                    <Flame size={14} className="text-amber-400 fill-amber-400 animate-pulse" />
+                                    <span className="text-xs sm:text-sm font-black font-mono tracking-tight text-amber-300 drop-shadow-md">
+                                      {work.metric}
+                                    </span>
+                                  </div>
+                                )}
+                              </div>
+                            )
                           )}
 
                           {/* Title */}
@@ -1447,8 +1522,12 @@ export default function App() {
                     }
 
                     if (imageWorks.length > 0) {
+                      const gridClasses = cat.id === 'narrative'
+                        ? "grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl"
+                        : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8";
+
                       return (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                        <div className={gridClasses}>
                           <AnimatePresence mode="popLayout">
                             {imageWorks.map((work, idx) => renderWorkCard(work, idx))}
                           </AnimatePresence>
