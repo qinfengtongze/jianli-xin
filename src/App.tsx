@@ -31,7 +31,8 @@ import {
   Eye,
   Layers,
   Maximize2,
-  ZoomIn
+  ZoomIn,
+  Smartphone
 } from 'lucide-react';
 
 // Interfaces
@@ -359,6 +360,7 @@ export default function App() {
             <a href="#stats" className="hover:text-blue-600 transition-colors">核心数据</a>
             <a href="#brands" className="hover:text-blue-600 transition-colors">合作品牌</a>
             <a href="#accounts" className="hover:text-blue-600 transition-colors">账号矩阵</a>
+            <a href="#feed-videos" className="hover:text-blue-600 transition-colors">信息流短视频</a>
             <a href="#works" className="hover:text-blue-600 transition-colors">作品集锦</a>
             <a href="#trust" className="hover:text-blue-600 transition-colors">粉丝信任</a>
             <a href="#experience" className="hover:text-blue-600 transition-colors">编导履历</a>
@@ -414,6 +416,13 @@ export default function App() {
                   className="block text-base font-medium text-slate-700 hover:text-blue-600"
                 >
                   账号矩阵
+                </a>
+                <a 
+                  href="#feed-videos" 
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block text-base font-medium text-slate-700 hover:text-blue-600"
+                >
+                  信息流短视频
                 </a>
                 <a 
                   href="#works" 
@@ -898,6 +907,137 @@ export default function App() {
 
             </div>
           </a>
+        </div>
+      </section>
+
+      {/* Commercial Feed Short Videos Section (信息流短视频) */}
+      <section id="feed-videos" className="py-20 bg-slate-950 text-white relative overflow-hidden border-t border-slate-800">
+        {/* Ambient background glows */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-600/10 rounded-full blur-[140px] pointer-events-none"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:32px_32px] opacity-5 pointer-events-none"></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Section Header */}
+          <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 gap-6">
+            <div className="space-y-3">
+              <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-mono font-semibold tracking-wider uppercase">
+                <Smartphone size={14} className="text-blue-400" />
+                <span>FEED COMMERCIALS · 9:16 VERTICAL</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight flex items-center gap-3">
+                <span>信息流短视频</span>
+                <span className="text-xs sm:text-sm font-normal px-3 py-1 rounded-full bg-white/10 text-slate-300 font-mono">
+                  5大核心垂直样片
+                </span>
+              </h2>
+              <p className="text-slate-400 text-sm max-w-2xl leading-relaxed">
+                深谙信息流分发算法与黄金前3秒完播逻辑，融汇电影级美术布光与紧凑痛点脚本，赋能高点击、高转化爆款商业交付。
+              </p>
+            </div>
+
+            {/* Feishu Wiki Header Link */}
+            <a
+              href="https://xl7yajdeum.feishu.cn/wiki/I0QFwdFV6i8ZwNk9mUZcA9HZn7b"
+              target="_blank"
+              rel="noreferrer"
+              className="group inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs font-bold shadow-lg shadow-blue-500/20 transition-all hover:shadow-blue-500/40 hover:-translate-y-0.5 cursor-pointer"
+            >
+              <span>查看飞书项目全集</span>
+              <ExternalLink size={14} className="group-hover:translate-x-0.5 transition-transform" />
+            </a>
+          </div>
+
+          {/* 5-Column High-End 9:16 Mobile Video Cards Layout */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 sm:gap-6">
+            {[
+              {
+                id: 'feed-1',
+                cover: '/video-cover-01.jpg',
+                title: '迪士尼联名耳机',
+                url: 'https://my.feishu.cn/file/Me1ebzns0od7HWx1sLZc5CojnHg?from=from_copylink',
+                tagColor: 'bg-sky-500/20 text-sky-300 border-sky-500/30'
+              },
+              {
+                id: 'feed-2',
+                cover: '/video-cover-02.jpg',
+                title: '游戏耳机',
+                url: 'https://my.feishu.cn/file/R63HbGTWAoIQHvxMnCecmqsVnYb?from=from_copylink',
+                tagColor: 'bg-purple-500/20 text-purple-300 border-purple-500/30'
+              },
+              {
+                id: 'feed-3',
+                cover: '/video-cover-03.jpg',
+                title: '耳机配饰',
+                url: 'https://my.feishu.cn/file/H8PKbdafVodlKex0sd8c4KOqnvg?from=from_copylink',
+                tagColor: 'bg-amber-500/20 text-amber-300 border-amber-500/30'
+              },
+              {
+                id: 'feed-4',
+                cover: '/video-cover-04.jpg',
+                title: '耳机户外展示',
+                url: 'https://my.feishu.cn/file/JSqubLjHEoTwDMxMWlbcSR7lnRe?from=from_copylink',
+                tagColor: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30'
+              },
+              {
+                id: 'feed-5',
+                cover: '/video-cover-05.jpg',
+                title: '游戏耳机2',
+                url: 'https://my.feishu.cn/file/WqCeb85EIobUjBxxia7cWHCnnjd?from=from_copylink',
+                tagColor: 'bg-blue-500/20 text-blue-300 border-blue-500/30'
+              }
+            ].map((video, idx) => (
+              <motion.a
+                key={video.id}
+                href={video.url}
+                target="_blank"
+                rel="noreferrer"
+                whileHover={{ y: -8, scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+                className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-xl hover:shadow-2xl hover:border-blue-500/50 flex flex-col cursor-pointer transition-all duration-300"
+              >
+                {/* 9:16 Vertical Video Screen Frame */}
+                <div className="relative w-full aspect-[9/16] overflow-hidden bg-slate-950">
+                  {/* Video Thumbnail Cover */}
+                  <img
+                    src={video.cover}
+                    alt={video.title}
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  />
+
+                  {/* Top Floating Pill Badges */}
+                  <div className="absolute top-3 left-3 right-3 flex items-center justify-between z-20 pointer-events-none">
+                    <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold border backdrop-blur-md ${video.tagColor}`}>
+                      {video.title}
+                    </span>
+                    <span className="px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-md text-[10px] text-slate-300 font-mono border border-white/10 flex items-center gap-1">
+                      <span>飞书</span>
+                      <ExternalLink size={10} />
+                    </span>
+                  </div>
+
+                  {/* Center Play Button Overlay on Hover */}
+                  <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
+                    <div className="w-14 h-14 rounded-full bg-black/60 backdrop-blur-md border border-white/30 text-white flex items-center justify-center shadow-2xl group-hover:bg-blue-600 group-hover:border-blue-400 group-hover:scale-110 group-hover:shadow-blue-500/40 transition-all duration-300">
+                      <Play size={20} className="fill-current ml-1" />
+                    </div>
+                  </div>
+
+                  {/* Clean Bottom Hover Cue */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none flex flex-col items-center justify-end pb-4 space-y-1">
+                    <span className="text-white text-xs font-bold drop-shadow-md">
+                      {video.title}
+                    </span>
+                    <span className="text-slate-200 text-[11px] font-medium flex items-center gap-1 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20">
+                      <span>点击播放飞书视频</span>
+                      <ExternalLink size={11} />
+                    </span>
+                  </div>
+                </div>
+              </motion.a>
+            ))}
+          </div>
         </div>
       </section>
 

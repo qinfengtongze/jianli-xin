@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" width="100%" height="100%">
+  <defs>
+    <linearGradient id="studioClean" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7" />
+      <stop offset="50%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="cardGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="60%" stop-color="rgba(15,23,42,0.4)" />
+      <stop offset="100%" stop-color="rgba(15,23,42,0.95)" />
+    </linearGradient>
+  </defs>
+
+  <rect width="360" height="640" fill="url(#studioClean)" rx="20" />
+
+  <!-- Diagonal Blind Shadows -->
+  <g opacity="0.1" stroke="#78350F" stroke-width="12">
+    <line x1="-50" y1="80" x2="400" y2="180" />
+    <line x1="-50" y1="140" x2="400" y2="240" />
+    <line x1="-50" y1="200" x2="400" y2="300" />
+    <line x1="-50" y1="260" x2="400" y2="360" />
+    <line x1="-50" y1="320" x2="400" y2="420" />
+  </g>
+
+  <!-- Wall Posters in Background -->
+  <g transform="translate(35, 70)" opacity="0.6">
+    <rect width="55" height="75" rx="4" fill="#EA580C" opacity="0.8" />
+    <rect x="70" width="55" height="75" rx="4" fill="#0284C7" opacity="0.8" />
+  </g>
+
+  <!-- Female Host Standing with Crossed Arms -->
+  <g transform="translate(180, 250)">
+    <!-- Hair & Head -->
+    <path d="M -34 10 C -48 50 -44 120 -28 150 C -22 160 -16 100 -16 50 C -10 55 10 55 16 50 C 16 100 22 160 28 150 C 44 120 48 50 34 10 Z" fill="#5A230B" />
+    <ellipse cx="0" cy="15" rx="24" ry="27" fill="#FCD34D" opacity="0.5" />
+    <ellipse cx="0" cy="14" rx="22" ry="25" fill="#FFF1F2" />
+    <!-- White Lace Blouse & Crossed Arms -->
+    <path d="M -60 120 C -55 80 -30 55 0 52 C 30 55 55 80 60 120 Z" fill="#FFFFFF" />
+    <!-- Folded Arms Silhouette -->
+    <path d="M -45 100 Q 0 135 45 100 L 40 125 Q 0 155 -40 125 Z" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2" />
+    <!-- Lapel Mic -->
+    <rect x="-3" y="68" width="6" height="12" rx="2" fill="#0F172A" />
+  </g>
+
+  <rect x="0" y="280" width="360" height="360" fill="url(#cardGlow)" />
+
+  <!-- Subtitle Text: 听声辨位重要 -->
+  <g transform="translate(180, 520)">
+    <rect x="-100" y="-22" width="200" height="38" rx="10" fill="rgba(0,0,0,0.65)" stroke="rgba(255,255,255,0.2)" />
+    <text x="0" y="3" text-anchor="middle" font-family="'PingFang SC', -apple-system, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF" letter-spacing="1">
+      听声辨位重要
+    </text>
+  </g>
+
+  <!-- Top Badge -->
+  <g transform="translate(20, 28)">
+    <rect width="110" height="28" rx="14" fill="rgba(15,23,42,0.7)" stroke="rgba(255,255,255,0.2)" />
+    <circle cx="14" cy="14" r="4" fill="#10B981" />
+    <text x="26" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">
+      硬核声学干货
+    </text>
+  </g>
+
+  <!-- Play Pill Icon -->
+  <g transform="translate(305, 30)">
+    <circle cx="14" cy="14" r="14" fill="rgba(255,255,255,0.25)" />
+    <polygon points="12,8 20,14 12,20" fill="#FFFFFF" />
+  </g>
+
+
+</svg>

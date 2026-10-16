@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cyberBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#090D16" />
+    </linearGradient>
+    <linearGradient id="neonPurp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+    <linearGradient id="cardGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="60%" stop-color="rgba(15,23,42,0.4)" />
+      <stop offset="100%" stop-color="rgba(15,23,42,0.95)" />
+    </linearGradient>
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="360" height="640" fill="url(#cyberBg)" rx="20" />
+
+  <!-- Ambient Neon Lighting / Curtains -->
+  <path d="M 0 0 C 40 100 20 300 0 450 L 0 0 Z" fill="#38BDF8" opacity="0.2" filter="url(#neonGlow)" />
+  <path d="M 360 0 C 310 120 330 350 360 480 L 360 0 Z" fill="#A855F7" opacity="0.25" filter="url(#neonGlow)" />
+
+  <!-- Gaming Chair Outline -->
+  <g transform="translate(180, 260)">
+    <path d="M -65 80 C -60 -40 -40 -90 0 -95 C 40 -90 60 -40 65 80 Z" fill="#1E293B" stroke="#334155" stroke-width="3" />
+    <ellipse cx="0" cy="-95" rx="35" ry="16" fill="#334155" />
+    <path d="M -50 0 L -50 70 M 50 0 L 50 70" stroke="#6366F1" stroke-width="4" opacity="0.7" />
+  </g>
+
+  <!-- Female Gamer in Yellow Outfit -->
+  <g transform="translate(180, 270)">
+    <!-- Hair & Head -->
+    <path d="M -30 10 C -42 45 -40 100 -25 120 C -20 130 -15 80 -15 45 C -10 50 10 50 15 45 C 15 80 20 130 25 120 C 40 100 42 45 30 10 Z" fill="#451A03" />
+    <ellipse cx="0" cy="15" rx="22" ry="24" fill="#FCD34D" opacity="0.5" />
+    <ellipse cx="0" cy="14" rx="20" ry="22" fill="#FFE4E6" />
+    <!-- Yellow Shirt -->
+    <path d="M -45 100 C -40 70 -20 50 0 48 C 20 50 40 70 45 100 Z" fill="#FEF08A" />
+    <path d="M -10 48 L 10 48 L 0 75 Z" fill="#FDE047" />
+    <!-- Wireless Gaming Earbuds in Ear -->
+    <ellipse cx="-18" cy="14" rx="3.5" ry="6" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5" />
+    <line x1="-18" y1="18" x2="-17" y2="26" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" />
+    <!-- Horizontal Gaming Phone Held in Hands -->
+    <g transform="translate(0, 85)">
+      <rect x="-45" y="-16" width="90" height="44" rx="8" fill="#E2E8F0" stroke="#64748B" stroke-width="1.5" />
+      <circle cx="0" cy="6" r="14" fill="none" stroke="#60A5FA" stroke-width="2" stroke-dasharray="4,3" />
+      <ellipse cx="-50" cy="6" rx="10" ry="16" fill="#FCD34D" opacity="0.8" />
+      <ellipse cx="50" cy="6" rx="10" ry="16" fill="#FCD34D" opacity="0.8" />
+    </g>
+  </g>
+
+  <!-- Front Desk & Glowing RELAX Block -->
+  <rect x="0" y="460" width="360" height="180" fill="#0F172A" />
+  <line x1="0" y1="460" x2="360" y2="460" stroke="#334155" stroke-width="2" />
+  <g transform="translate(210, 480)" filter="url(#neonGlow)">
+    <rect x="0" y="0" width="120" height="40" rx="6" fill="#0284C7" opacity="0.35" stroke="#38BDF8" stroke-width="2" />
+    <text x="60" y="26" text-anchor="middle" font-family="'Montserrat', sans-serif" font-size="18" font-weight="900" fill="#E0F2FE" letter-spacing="4">
+      RELAX
+    </text>
+  </g>
+
+  <rect x="0" y="280" width="360" height="360" fill="url(#cardGlow)" />
+
+  <!-- Subtitle Text: 真的能完全满足你 -->
+  <g transform="translate(180, 520)">
+    <rect x="-120" y="-22" width="240" height="38" rx="10" fill="rgba(0,0,0,0.65)" stroke="rgba(255,255,255,0.2)" />
+    <text x="0" y="3" text-anchor="middle" font-family="'PingFang SC', -apple-system, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF" letter-spacing="1">
+      真的能完全满足你
+    </text>
+  </g>
+
+  <!-- Top Badge -->
+  <g transform="translate(20, 28)">
+    <rect width="110" height="28" rx="14" fill="rgba(15,23,42,0.7)" stroke="rgba(255,255,255,0.2)" />
+    <circle cx="14" cy="14" r="4" fill="#C084FC" />
+    <text x="26" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">
+      低延迟开黑体验
+    </text>
+  </g>
+
+  <!-- Play Pill Icon -->
+  <g transform="translate(305, 30)">
+    <circle cx="14" cy="14" r="14" fill="rgba(255,255,255,0.25)" />
+    <polygon points="12,8 20,14 12,20" fill="#FFFFFF" />
+  </g>
+
+
+</svg>

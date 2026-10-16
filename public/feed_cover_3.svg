@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" width="100%" height="100%">
+  <defs>
+    <linearGradient id="warmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#422006" />
+      <stop offset="40%" stop-color="#1F1610" />
+      <stop offset="100%" stop-color="#0C0A09" />
+    </linearGradient>
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="50%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+    </linearGradient>
+    <linearGradient id="matteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="cardGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="60%" stop-color="rgba(15,23,42,0.4)" />
+      <stop offset="100%" stop-color="rgba(15,23,42,0.95)" />
+    </linearGradient>
+    <filter id="dropShad" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <rect width="360" height="640" fill="url(#warmBg)" rx="20" />
+
+  <!-- Warm Ambient Lamp Glow in Studio -->
+  <circle cx="80" cy="180" r="120" fill="#F59E0B" opacity="0.2" filter="blur(25px)" />
+
+  <!-- Background Model Looking at Headphones -->
+  <g transform="translate(180, 200)" opacity="0.5">
+    <ellipse cx="0" cy="0" rx="24" ry="28" fill="#FCD34D" opacity="0.5" />
+    <path d="M -30 -10 C -45 40 -40 80 -25 110 C -20 120 -15 80 -15 45 C -10 50 10 50 15 45 C 15 80 20 120 25 110 C 40 80 45 40 30 -10 Z" fill="#381A05" />
+    <path d="M -45 90 C -35 50 -15 40 0 38 C 15 40 35 50 45 90 Z" fill="#FFFFFF" />
+  </g>
+
+  <!-- Wooden Desk Riser -->
+  <rect x="0" y="370" width="360" height="20" rx="4" fill="#78350F" stroke="#92400E" stroke-width="1.5" />
+  <rect x="20" y="390" width="320" height="8" fill="#451A03" />
+
+  <!-- Headphone 1: Luxury Titanium Silver on Stand -->
+  <g transform="translate(130, 270)" filter="url(#dropShad)">
+    <!-- Metal Stand Base & Rod -->
+    <rect x="-22" y="96" width="44" height="6" rx="2" fill="#CBD5E1" />
+    <line x1="0" y1="96" x2="0" y2="-10" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round" />
+    <path d="M -15 -10 Q 0 -18 15 -10" stroke="#CBD5E1" stroke-width="6" fill="none" stroke-linecap="round" />
+    <!-- Over-ear Headband & Earcups -->
+    <path d="M -40 25 C -40 -35 40 -35 40 25" stroke="url(#silverGrad)" stroke-width="8" fill="none" stroke-linecap="round" />
+    <ellipse cx="-42" cy="28" rx="16" ry="24" fill="url(#silverGrad)" stroke="#FFFFFF" stroke-width="1.5" />
+    <ellipse cx="42" cy="28" rx="16" ry="24" fill="url(#silverGrad)" stroke="#FFFFFF" stroke-width="1.5" />
+    <line x1="-42" y1="10" x2="-42" y2="46" stroke="#64748B" stroke-width="2" />
+  </g>
+
+  <!-- Headphone 2: Matte Black Over-ear on Stand -->
+  <g transform="translate(245, 270)" filter="url(#dropShad)">
+    <!-- Stand -->
+    <rect x="-22" y="96" width="44" height="6" rx="2" fill="#334155" />
+    <line x1="0" y1="96" x2="0" y2="-10" stroke="#334155" stroke-width="4" stroke-linecap="round" />
+    <!-- Over-ear Headband & Earcups -->
+    <path d="M -40 25 C -40 -35 40 -35 40 25" stroke="url(#matteGrad)" stroke-width="8" fill="none" stroke-linecap="round" />
+    <ellipse cx="-42" cy="28" rx="16" ry="24" fill="url(#matteGrad)" stroke="#475569" stroke-width="1.5" />
+    <ellipse cx="42" cy="28" rx="16" ry="24" fill="url(#matteGrad)" stroke="#475569" stroke-width="1.5" />
+  </g>
+
+  <!-- Dark Foreground Gradient -->
+  <rect x="0" y="280" width="360" height="360" fill="url(#cardGlow)" />
+
+  <!-- Subtitle Text: 入耳太痛 -->
+  <g transform="translate(180, 520)">
+    <rect x="-80" y="-22" width="160" height="38" rx="10" fill="rgba(0,0,0,0.65)" stroke="rgba(255,255,255,0.2)" />
+    <text x="0" y="3" text-anchor="middle" font-family="'PingFang SC', -apple-system, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF" letter-spacing="1">
+      入耳太痛
+    </text>
+  </g>
+
+  <!-- Top Badge -->
+  <g transform="translate(20, 28)">
+    <rect width="110" height="28" rx="14" fill="rgba(15,23,42,0.7)" stroke="rgba(255,255,255,0.2)" />
+    <circle cx="14" cy="14" r="4" fill="#F59E0B" />
+    <text x="26" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">
+      降噪舒适度横评
+    </text>
+  </g>
+
+  <!-- Play Pill Icon -->
+  <g transform="translate(305, 30)">
+    <circle cx="14" cy="14" r="14" fill="rgba(255,255,255,0.25)" />
+    <polygon points="12,8 20,14 12,20" fill="#FFFFFF" />
+  </g>
+
+
+</svg>
