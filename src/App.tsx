@@ -953,35 +953,35 @@ export default function App() {
             {[
               {
                 id: 'feed-1',
-                cover: '/video-cover-01.jpg',
+                cover: '/video-cover-01.png',
                 title: '迪士尼联名耳机',
                 url: 'https://my.feishu.cn/file/Me1ebzns0od7HWx1sLZc5CojnHg?from=from_copylink',
                 tagColor: 'bg-sky-500/20 text-sky-300 border-sky-500/30'
               },
               {
                 id: 'feed-2',
-                cover: '/video-cover-02.jpg',
+                cover: '/video-cover-02.png',
                 title: '游戏耳机',
                 url: 'https://my.feishu.cn/file/R63HbGTWAoIQHvxMnCecmqsVnYb?from=from_copylink',
                 tagColor: 'bg-purple-500/20 text-purple-300 border-purple-500/30'
               },
               {
                 id: 'feed-3',
-                cover: '/video-cover-03.jpg',
+                cover: '/video-cover-03.png',
                 title: '耳机配饰',
                 url: 'https://my.feishu.cn/file/H8PKbdafVodlKex0sd8c4KOqnvg?from=from_copylink',
                 tagColor: 'bg-amber-500/20 text-amber-300 border-amber-500/30'
               },
               {
                 id: 'feed-4',
-                cover: '/video-cover-04.jpg',
+                cover: '/video-cover-04.png',
                 title: '耳机户外展示',
                 url: 'https://my.feishu.cn/file/JSqubLjHEoTwDMxMWlbcSR7lnRe?from=from_copylink',
                 tagColor: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30'
               },
               {
                 id: 'feed-5',
-                cover: '/video-cover-05.jpg',
+                cover: '/video-cover-05.png',
                 title: '游戏耳机2',
                 url: 'https://my.feishu.cn/file/WqCeb85EIobUjBxxia7cWHCnnjd?from=from_copylink',
                 tagColor: 'bg-blue-500/20 text-blue-300 border-blue-500/30'
