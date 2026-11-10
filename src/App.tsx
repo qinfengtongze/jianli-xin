@@ -112,16 +112,15 @@ export default function App() {
     },
     {
       id: 'comm-3',
-      title: '抖音短视频种草爆款案例',
+      title: '联想小新14 360 AI元启版体验',
       category: 'commercial',
-      platform: 'Douyin',
-      url: 'https://v.douyin.com/i6HXduFH1Tc/',
-      image: '/video-covers/commercial-douyin-seeding.jpg',
-      isVertical: true,
-      description: '突出产品核心卖点，适配短视频节奏。',
-      tag: '抖音种草',
-      accentBg: 'bg-pink-50 border-pink-200/60 text-pink-600 hover:border-pink-400',
-      accentText: 'text-pink-600'
+      platform: 'Bilibili',
+      url: 'https://www.bilibili.com/video/BV1VcG1zYEay/?vd_source=679a4bb385b44f11f1b016dfb7241618',
+      image: '/video-covers/bv1vcg1zyeay.jpg',
+      description: '联想笔记本体验',
+      tag: '笔记本体验',
+      accentBg: 'bg-blue-50 border-blue-200/60 text-blue-600 hover:border-blue-400',
+      accentText: 'text-blue-600'
     },
     {
       id: 'comm-4',
