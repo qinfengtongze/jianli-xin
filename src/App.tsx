@@ -280,6 +280,42 @@ export default function App() {
       accentBg: 'bg-rose-50 border-rose-200/60 text-rose-600 hover:border-rose-400',
       accentText: 'text-rose-600'
     },
+    {
+      id: 'bv19c4mz3eeh',
+      title: '谁是影像新王？vivo X300 Pro vs iPhone17 Pro Max',
+      category: 'viral',
+      platform: 'Bilibili',
+      url: 'https://www.bilibili.com/video/BV19c4mz3Eeh/?vd_source=679a4bb385b44f11f1b016dfb7241618',
+      image: '/video-covers/bv19c4mz3eeh.jpg',
+      tag: 'B站作品',
+      description: '谁是影像新王？vivo X300 Pro vs iPhone17 Pro Max',
+      accentBg: 'bg-rose-50 border-rose-200/60 text-rose-600 hover:border-rose-400',
+      accentText: 'text-rose-600'
+    },
+    {
+      id: 'bv1n9s3ygehm',
+      title: '【村上挑战】只用手机就能还原港片经典镜头？',
+      category: 'viral',
+      platform: 'Bilibili',
+      url: 'https://www.bilibili.com/video/BV1N9S3YgEHm/?vd_source=679a4bb385b44f11f1b016dfb7241618',
+      image: '/video-covers/bv1n9s3ygehm.jpg',
+      tag: 'B站作品',
+      description: '【村上挑战】只用手机就能还原港片经典镜头？',
+      accentBg: 'bg-violet-50 border-violet-200/60 text-violet-600 hover:border-violet-400',
+      accentText: 'text-violet-600'
+    },
+    {
+      id: 'bv18grkbzevk',
+      title: '百元机最终解，600元的不将就——iQOO Z10X',
+      category: 'viral',
+      platform: 'Bilibili',
+      url: 'https://www.bilibili.com/video/BV18GrkBzEVK/?vd_source=679a4bb385b44f11f1b016dfb7241618',
+      image: '/video-covers/bv18grkbzevk.jpg',
+      tag: 'B站作品',
+      description: '百元机最终解，600元的不将就——iQOO Z10X',
+      accentBg: 'bg-teal-50 border-teal-200/60 text-teal-600 hover:border-teal-400',
+      accentText: 'text-teal-600'
+    },
     // 抖音爆款高赞内容 (带抖音视频截图)
     {
       id: 'viral-dy-oppo',
